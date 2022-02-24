@@ -1,0 +1,33 @@
+/* Module Build File */
+
+description     = "Module for fcu control"
+ext {
+  
+}
+niagaraModule {
+  moduleName = "fcuModule"
+  preferredSymbol = "FM"
+  runtimeProfile = "rt"
+  version = "1.11"
+}
+
+dependencies {
+  compile "Tridium:nre:4.7"
+  compile "Tridium:baja:4.7"
+
+  compile "Tridium:kitControl-rt:4.7"
+  compile "Tridium:schedule-rt:4.7"
+  
+
+  compile "Tridium:kitControl-rt:4.7" 
+  compile "Tridium:control-rt:4.7"  
+}
+jar { 
+  from("src") { 
+    include "com/bc/graphics/*.*"
+  }
+}
+moduleTestJar {
+  from('srcTest') {
+  }
+}

@@ -1,0 +1,15 @@
+
+  version = "1.52"
+  1. Меняем перезапись переменной  
+  
+  String strMsg =   getSourceName().format(this);
+  set(BString.make(strMsg)); // 
+  От любых изменений на "только если изменилась переменная mode"
+  
+  2. Меняем значение "по умолчанию" для 
+  sourceName            :     BFormat               flags {  }     default {[ BFormat.make("%time()% %parent.parent.displayName% Mode=%mode.value%") ]}
+
+  version = "1.53"
+  1. Добавляем в PX в титул UnitDisplayName + мигание колокольчиков делаем с первого раза + 
+  
+  

@@ -1,0 +1,36 @@
+/* Module Build File */
+
+description     = "Control Module For Air Curtain"
+ext {
+}
+niagaraModule {
+  moduleName = "BcAirCurtain"
+  preferredSymbol = "AC"
+  runtimeProfile = "rt"
+  version = "1.52"
+  certAlias = "abaranov"
+}
+
+dependencies {
+  compile "Tridium:nre:4.9"
+  compile "Tridium:baja:4.9"
+  
+  compile "Tridium:alarm-rt:4.9"  
+  compile "Tridium:gx-rt:4.9"
+  compile "Tridium:bajaui-wb:4.9" 
+  compile "Tridium:workbench-wb:4.9"
+    
+  compile "Tridium:control-rt:4.9" 
+  compile "Tridium:report-rt:4.9"   
+  compile "Tridium:kitControl-rt:4.9" 
+   
+}
+jar { 
+  from("src") { 
+    include "com/bc/graphics/*.*"
+    }
+}
+moduleTestJar {
+  from('srcTest') {
+  }
+}

@@ -1,0 +1,16 @@
+<!-- Module Build File -->
+
+<module
+  name = "id1359"
+  bajaVersion = "0"
+  preferredSymbol = "ID"
+  description = "Module for Landshaft"
+  vendor = "bclimate"
+>
+
+  <!-- Dependencies -->
+  <dependency name="baja" vendor="Tridium" vendorVersion="3.8" />
+  <dependency name="control" vendor="Tridium" vendorVersion="3.8"/>
+  <package name="com.bc.id1359" />
+
+</module>

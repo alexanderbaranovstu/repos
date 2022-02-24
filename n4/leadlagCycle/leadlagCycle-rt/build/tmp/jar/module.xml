@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="leadlagCycle-rt" bajaVersion="0" vendor="BC" vendorVersion="1.01" description="Module for pump control" preferredSymbol="PC" nre="true" autoload="true" installable="true" buildMillis="1642758253210" buildHost="LAPTOP-NOADV716" moduleName="leadlagCycle" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.7"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.7"/>
+  <dependency name="kitControl-rt" vendor="Tridium" vendorVersion="4.7"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type name="Controller" class="com.bc.leadlagCycle.BController"/>
+  <type name="SingleUnit" class="com.bc.leadlagCycle.BSingleUnit"/>
+  <type name="UnitState" class="com.bc.leadlagCycle.BUnitState"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

@@ -1,0 +1,70 @@
+// depends: baja; program
+
+import javax.baja.sys.*;
+import com.tridium.program.*;
+
+public class RobotImpl
+  extends Robot
+{
+
+  public void run()
+    throws Exception
+  {
+    process(Sys.getStation());
+  }
+
+  public void process(BComponent c)
+    throws Exception
+  {
+    // do something here
+    //log.println(c.getNavName() + " [" + c.getType() + "]");
+    String classname = c.getNavName();
+    if(classname.equalsIgnoreCase("fcu")){
+      log.println( "Find Fcu component! = " + c.toPathString());
+      MakeFcuLinks(c);
+    
+    }
+    
+    
+    // recurse
+    BComponent[] kids = c.getChildComponents();
+    for(int i=0; i<kids.length; ++i)
+      process(kids[i]);
+  } 
+
+
+private void MakeFcuLinks( BComponent comp ) throws Exception
+{
+ prgLink( (BComponent)(comp.getParent().get("Pv")), (BComponent)(comp.getParent().get("fcu")), "out", "T3in"); 
+ prgLink( (BComponent)(comp.getParent().get("Mode")), (BComponent)(comp.get("operation")), "out", "set"); 
+ prgLink( (BComponent)(comp.get("enumSh")), (BComponent)(comp.getParent().get("Mode")) , "out", "set"); 
+ prgLink( (BComponent)(comp.getParent().get("Sp")), (BComponent)(comp.get("PID")) , "out", "setpoint"); 
+ prgLink( (BComponent)(comp.getParent().get("Pv")), (BComponent)(comp.get("PID")) , "out", "controlledVariable"); 
+  
+ prgLink( (BComponent)(comp.getParent().get("Max")), (BComponent)(comp.get("PID")) , "out", "maximumOutput");   
+ prgLink( (BComponent)(comp.getParent().get("Min")), (BComponent)(comp.get("PID")) , "out", "minimumOutput");     
+   
+ prgLink( (BComponent)(comp.getParent().get("S1FB")), (BComponent)(comp.getParent().get("fcu")), "out", "Speed1FB"); 
+ prgLink( (BComponent)(comp.getParent().get("S2FB")), (BComponent)(comp.getParent().get("fcu")), "out", "Speed2FB"); 
+ prgLink( (BComponent)(comp.getParent().get("S3FB")), (BComponent)(comp.getParent().get("fcu")), "out", "Speed3FB"); 
+ 
+ prgLink( (BComponent)(comp.getParent().get("fcu")), (BComponent)(comp.getParent().get("S1")), "Speed1", "in10"); 
+ prgLink( (BComponent)(comp.getParent().get("fcu")), (BComponent)(comp.getParent().get("S2")), "Speed2", "in10"); 
+ prgLink( (BComponent)(comp.getParent().get("fcu")), (BComponent)(comp.getParent().get("S3")), "Speed3", "in10");  
+ 
+ prgLink( (BComponent)(comp.getParent().get("fcu")), (BComponent)(comp.getParent().get("Heat")), "valveHeat", "in10");  
+ prgLink( (BComponent)(comp.getParent().get("fcu")), (BComponent)(comp.getParent().get("Cool")), "valveCool", "in10");  
+ prgLink( (BComponent)(comp.getParent().get("fcu")), (BComponent)(comp.getParent().get("St")), "hcMode", "in10");  
+ 
+ prgLink( (BComponent)(comp.getParent().get("fcu")), (BComponent)(comp.getParent().get("N")), "speedInt", "in10");  
+}
+
+private void prgLink(BComponent sourceComponent, BComponent targetComponent, String sourceSlot , String targetSlot  ) throws Exception
+{
+
+    BLink link =  targetComponent.makeLink(sourceComponent, sourceComponent.getSlot(sourceSlot), targetComponent.getSlot(targetSlot), null);
+    try{targetComponent.add(sourceSlot+targetSlot, link); }
+    catch(Exception ie){System.out.println("Link " + sourceSlot+targetSlot + " is Done!!!" + ie);}       
+
+}
+}

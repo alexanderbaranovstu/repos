@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.blind.BCmd'
+  name='BCmd'
+  packageName='com.bc.CommonLogic.blind'
+  final='true'
+>
+<description>BOrientation defines a widget's orientation as
+ either horizontal or vertical.
+</description>
+<tag name='author'>Baranov Alex</tag>
+<tag name='creation'>1 March 21</tag>
+<tag name='version'>$Revision: 2$ $Date: 3/23/05 11:29:07 AM EST$</tag>
+<tag name='since'>Baja 1.0</tag>
+<extends module='baja' class='javax.baja.sys.BFrozenEnum'/>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public static BCommonLogic:com.bc.CommonLogic.blind.BCmd make(int ordinal) -->
+<method name='make' public='true' static='true'>
+<parameter name='ordinal' class='int'/>
+<return module='BCommonLogic' class='com.bc.CommonLogic.blind.BCmd'/>
+<description>Factory method with ordinal.</description>
+</method>
+
+<!-- public static BCommonLogic:com.bc.CommonLogic.blind.BCmd make(java.lang.String tag) -->
+<method name='make' public='true' static='true'>
+<parameter name='tag' class='java.lang.String'/>
+<return module='BCommonLogic' class='com.bc.CommonLogic.blind.BCmd'/>
+<description>Factory method with tag.</description>
+</method>
+
+<!-- public final static int OPEN -->
+<field name='OPEN' public='true' static='true' final='true'>
+<type class='int'/>
+<description>Ordinal value for Open.</description>
+</field>
+
+<!-- public final static int STOP -->
+<field name='STOP' public='true' static='true' final='true'>
+<type class='int'/>
+<description>Ordinal value for Stop.</description>
+</field>
+
+<!-- public final static int CLOSE -->
+<field name='CLOSE' public='true' static='true' final='true'>
+<type class='int'/>
+<description>Ordinal value for Close.</description>
+</field>
+
+<!-- public final static BCommonLogic:com.bc.CommonLogic.blind.BCmd Open -->
+<field name='Open' public='true' static='true' final='true'>
+<type module='BCommonLogic' class='com.bc.CommonLogic.blind.BCmd'/>
+<description>BCmd constant for Open.</description>
+</field>
+
+<!-- public final static BCommonLogic:com.bc.CommonLogic.blind.BCmd Stop -->
+<field name='Stop' public='true' static='true' final='true'>
+<type module='BCommonLogic' class='com.bc.CommonLogic.blind.BCmd'/>
+<description>BCmd constant for Stop.</description>
+</field>
+
+<!-- public final static BCommonLogic:com.bc.CommonLogic.blind.BCmd Close -->
+<field name='Close' public='true' static='true' final='true'>
+<type module='BCommonLogic' class='com.bc.CommonLogic.blind.BCmd'/>
+<description>BCmd constant for Close.</description>
+</field>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+<!-- public final static BCommonLogic:com.bc.CommonLogic.blind.BCmd DEFAULT -->
+<field name='DEFAULT' public='true' static='true' final='true'>
+<type module='BCommonLogic' class='com.bc.CommonLogic.blind.BCmd'/>
+</field>
+
+</class>
+</bajadoc>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="4.0" reversibleEncodingKeySource="none" FIPSEnabled="false" reversibleEncodingValidator="[null.1]=" >
+<p m="b=baja" t="b:Folder">
+ <p n="AhuStateMachine" h="2" m="ah=ahu" t="ah:AhuStateMachine"> </p>
+  <p n="EquipmentFMode" h="3" m="ah=ahu" t="ah:EquipmentFMode"> </p>
+  <p n="EquipmentFWinter" h="4" m="ah=ahu" t="ah:EquipmentFWinter"> </p>
+  <p n="MixCamera" h="5" m="ah=ahu" t="ah:MixCamera"> </p>
+  <p n="Cooler" h="6" m="ah=ahu" t="ah:Cooler"> </p>
+  <p n="Heater" h="7" m="ah=ahu" t="ah:Heater"> </p>
+  <p n="NumericValue" h="8" m="ah=ahu" t="ah:NumericValue"> </p>
+  <p n="BooleanValue" h="9" m="ah=ahu" t="ah:BooleanValue"> </p>
+  <p n="EnumValue" h="10" m="ah=ahu" t="ah:EnumValue"> </p>   
+  <p n="StringValue" h="11" m="ah=ahu" t="ah:StringValue"> </p>       
+</p>
+
+</bajaObjectGraph>

@@ -1,0 +1,9 @@
+<!-- Module Include File -->
+
+<!-- Types -->
+<types>
+  <type name="Group" class="com.bc.componentsToAction.BGroup"/>
+  <type name="Unit" class="com.bc.componentsToAction.BUnit"/>
+  <type name="UState" class="com.bc.componentsToAction.BUState"/>
+  <type name="ComponentsToAction" class="com.bc.componentsToAction.BComponentsToAction"/>
+</types>

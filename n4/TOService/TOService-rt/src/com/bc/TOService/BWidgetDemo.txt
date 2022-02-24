@@ -1,0 +1,296 @@
+/*
+ * Copyright 2004 Tridium, Inc. All Rights Reserved.
+ */
+package com.bc.TOService;
+
+import java.io.*;
+import java.util.*;
+import javax.baja.sys.*;
+import javax.baja.util.*;
+import javax.baja.gx.*;
+import javax.baja.ui.*;
+import javax.baja.ui.enums.*;
+import javax.baja.ui.event.*;
+import javax.baja.ui.pane.*;
+import javax.baja.ui.table.*;
+import javax.baja.ui.text.*;
+import javax.baja.workbench.*;
+import javax.baja.workbench.fieldeditor.*;
+
+/**
+ * BWidgetDemo illustrates using many of the common bajaui widgets: 
+ * <pre>
+ *   nre docCodeExamples:com.tridium.example.ui.BWidgetDemo
+ * </pre>
+ *
+ * @author    Brian Frank       
+ * @creation  29 Sep 04
+ * @version   $Revision$ $Date$
+ * @since     Niagara 3.0
+ */
+public class BWidgetDemo  
+  extends BFrame  
+{   
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+
+  public Type getType() { return TYPE; }
+  public static final Type TYPE = Sys.loadType(BWidgetDemo.class);
+
+////////////////////////////////////////////////////////////////
+// Main
+////////////////////////////////////////////////////////////////
+
+  public static void main(String args[])
+    throws Exception
+  {          
+    BWidgetDemo frame = new BWidgetDemo();
+    frame.open(100, 100, 600, 500);       
+  }                
+
+////////////////////////////////////////////////////////////////
+// Constructor
+////////////////////////////////////////////////////////////////
+
+  public BWidgetDemo()
+  {
+    BTabbedPane tabs = new BTabbedPane();
+    tabs.addPane("Buttons",        buildButtons());
+    tabs.addPane("Text",           buildText());
+    tabs.addPane("WbFieldEditors", buildWbFieldEditors());
+    tabs.addPane("Table",          buildTable());
+    setContent(tabs);
+  }                                        
+  
+////////////////////////////////////////////////////////////////
+// Buttons
+////////////////////////////////////////////////////////////////
+
+  public BWidget buildButtons()
+  {
+    BGridPane pane = new BGridPane(2);
+    BAbstractButton b;
+    
+    // normal plain button image and text
+    b = new BButton(commandA, true, true);
+    pane.add(null, new BLabel("Normal Button"));
+    pane.add(null, b);
+    
+    // toolbar style button image only
+    b = new BButton(commandA, false, true);
+    b.setButtonStyle(BButtonStyle.toolBar);
+    pane.add(null, new BLabel("ToolBar Button"));
+    pane.add(null, b);
+
+    // normal toggle button image and text
+    b = new BToggleButton(commandB, true, true);
+    pane.add(null, new BLabel("Normal ToggleButton"));
+    pane.add(null, b);
+
+    // toolbar style toggle button image only
+    b = new BToggleButton(commandB, false, true);
+    b.setButtonStyle(BButtonStyle.toolBar);
+    pane.add(null, new BLabel("ToolBar ToggleButton"));
+    pane.add(null, b);
+
+    // check box
+    b = new BCheckBox(commandB);
+    pane.add(null, new BLabel("CheckBox"));
+    pane.add(null, b);
+
+    // build three radio commands                           
+    ToggleCommand ra = new ToggleCommand(this, "Radio A");
+    ToggleCommand rb = new ToggleCommand(this, "Radio B");
+    ToggleCommand rc = new ToggleCommand(this, "Radio C");
+    
+    // add radios to a group
+    RadioGroup radioGroup = new RadioGroup();
+    radioGroup.add(ra);
+    radioGroup.add(rb);
+    radioGroup.add(rc);
+    
+    // build a grid of three RadioButtons
+    BGridPane radios = new BGridPane(1);
+    radios.add(null, new BRadioButton(ra));
+    radios.add(null, new BRadioButton(rb));
+    radios.add(null, new BRadioButton(rc));
+    pane.add(null, new BLabel("RadioButtons"));
+    pane.add(null, radios);
+    
+    return pane;
+  }
+
+////////////////////////////////////////////////////////////////
+// Text
+////////////////////////////////////////////////////////////////
+
+  public BWidget buildText()
+  {
+    BGridPane pane = new BGridPane(2);    
+    BTextField f;
+    
+    f = new BTextField("hello", 30, true);
+    pane.add(null, new BLabel("TextField"));
+    pane.add(null, f);
+    
+    f = new BTextField("good", 30, false);
+    pane.add(null, new BLabel("ReadOnly TextField"));
+    pane.add(null, f);
+    
+    f = new BTextField("world", 30, true);
+    f.setEnabled(false);
+    pane.add(null, new BLabel("Disabled TextField"));
+    pane.add(null, f);
+    
+    BTextEditor editor = new BTextEditor();
+    BTextEditorPane editorPane = new BTextEditorPane(editor, 10, 30);
+    pane.add(null, new BLabel("TextEditor"));
+    pane.add(null, editorPane);
+
+    return pane;
+  }
+
+
+////////////////////////////////////////////////////////////////
+// WbFieldEditors
+////////////////////////////////////////////////////////////////
+
+  public BWidget buildWbFieldEditors()
+  {
+    BGridPane pane = new BGridPane(2);    
+    BWbFieldEditor f;
+    
+    BBoolean b = BBoolean.TRUE;
+    booleanEditor = BWbFieldEditor.makeFor(b);
+    booleanEditor.loadValue(b);
+    pane.add(null, new BLabel("Boolean"));
+    pane.add(null, booleanEditor);
+    
+    BDouble d = BDouble.make(75);
+    BDouble min = BDouble.make(0);
+    BDouble max = BDouble.make(100);
+    BFacets facets = BFacets.make(BFacets.MIN, min, BFacets.MAX, max);
+    doubleEditor = BWbFieldEditor.makeFor(d);
+    doubleEditor.loadValue(d, facets);
+    pane.add(null, new BLabel("Double"));
+    pane.add(null, doubleEditor);
+
+    enumEditor = BWbFieldEditor.makeFor(BMonth.june);
+    enumEditor.loadValue(BMonth.june);
+    pane.add(null, new BLabel("Enum"));
+    pane.add(null, enumEditor);
+    
+    pane.add(null, new BButton(new SaveCommand(this)));
+    
+    return pane;
+  }
+
+  class SaveCommand extends Command
+  {             
+    SaveCommand(BWidget owner) 
+    { 
+      super(owner, "Save");       
+    }
+    
+    public CommandArtifact doInvoke()
+      throws Exception 
+    { 
+      System.out.println("Save:");
+      System.out.println("  Boolean: " + booleanEditor.saveValue());
+      System.out.println("  Double:  " + doubleEditor.saveValue());
+      System.out.println("  Enum:    " + enumEditor.saveValue());
+      return null; 
+    }    
+  }
+
+////////////////////////////////////////////////////////////////
+// Table
+////////////////////////////////////////////////////////////////
+
+  public BWidget buildTable()
+  {                                                 
+    BTable table = new BTable(new DemoTableModel());
+    return new BBorderPane(table);
+  }                             
+  
+  class DemoTableModel extends TableModel
+  {
+    public int getRowCount() { return 100; }
+    public int getColumnCount() { return 3; }
+    public String getColumnName(int col) { return "Col " + col; }
+    public Object getValueAt(int row, int col) { return "Value " + row + "," + col; }
+  }
+
+////////////////////////////////////////////////////////////////
+// CommandA
+////////////////////////////////////////////////////////////////
+
+  class CommandA extends Command
+  {             
+    CommandA(BWidget owner) 
+    { 
+      super(owner, lex, "commandA"); 
+    }
+    
+    public CommandArtifact doInvoke() 
+    { 
+      BDialog.message(getOwner(), getLabel()); 
+      return null; 
+    }    
+  }
+
+////////////////////////////////////////////////////////////////
+// CommandB
+////////////////////////////////////////////////////////////////
+
+  class CommandB extends ToggleCommand
+  {             
+    CommandB(BWidget owner) 
+    { 
+      super(owner, lex, "commandB"); 
+    }                                   
+    
+    public void setSelected(boolean sel) 
+    { 
+      super.setSelected(sel);
+      System.out.println("CommandB " + sel);
+    }    
+  }
+
+////////////////////////////////////////////////////////////////
+// RadioGroup
+////////////////////////////////////////////////////////////////
+
+  class RadioGroup extends ToggleCommandGroup
+  {
+    protected void selected(ToggleCommand command)
+    {
+      super.selected(command);
+      System.out.println("RadioGroup: " + command);
+    }
+  }
+
+////////////////////////////////////////////////////////////////
+// Eventing
+////////////////////////////////////////////////////////////////
+
+  public void windowClosing(BWindowEvent event) 
+  {
+    System.exit(0);
+  }
+
+////////////////////////////////////////////////////////////////
+// Attributes
+////////////////////////////////////////////////////////////////
+
+  static final Lexicon lex = Lexicon.make(BWidgetDemo.class);
+ 
+  CommandA commandA = new CommandA(this); 
+  CommandB commandB = new CommandB(this); 
+  BWbFieldEditor booleanEditor;
+  BWbFieldEditor doubleEditor;
+  BWbFieldEditor enumEditor;
+}
+

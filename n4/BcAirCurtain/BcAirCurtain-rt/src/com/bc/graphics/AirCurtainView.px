@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="hx:HxPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="600.0,400.0" minScaleFactor="0.5" maxScaleFactor="1.0">
+
+    <Label layout="250.0,70.0,100.0,100.0" image="local:|module://BcAirCurtain|module://BcAirCurtain/com/bc/graphics/Duct_Vert_End_Up.svg"/>
+
+    <Label layout="250.0,110.0,100.0,140.0">
+      <ValueBinding ord="slot:speedInt">
+        <INumericToSimple name="image" map="gx:Image -inf:0.9=module://BcAirCurtain/com/bc/graphics/Fans_FanDown_Off.svg;1.0:1.9=module://BcAirCurtain/com/bc/graphics/Fans_FanDown_On.svg;2.0:2.9=module://BcAirCurtain/com/bc/graphics/Fans_FanDown_On.svg;3.0:+inf=module://BcAirCurtain/com/bc/graphics/Fans_FanDown_On.svg;default=local:|module://BcAirCurtain|module://BcAirCurtain/com/bc/graphics/Fans_FanDown_Off.svg;"/>
+      </ValueBinding>
+    </Label>
+
+    <Label layout="110.0,150.0,130.0,100.0">
+      <ValueBinding ord="slot:switchPos">
+        <IEnumToSimple name="image" map="gx:Image 2=module://BcAirCurtain/com/bc/graphics/sw2.svg;0=module://BcAirCurtain/com/bc/graphics/sw0.svg;3=module://BcAirCurtain/com/bc/graphics/sw3.svg;4=module://BcAirCurtain/com/bc/graphics/sw4.svg;1=module://BcAirCurtain/com/bc/graphics/sw1.svg;default=local:|module://BcAirCurtain|module://BcAirCurtain/com/bc/graphics/sw0.svg;"/>
+      </ValueBinding>
+    </Label>
+
+    <Label layout="20.0,210.0,80.0,20.0" text="Off" halign="right"/>
+
+    <Label layout="20.0,180.0,80.0,20.0" text="Fan1 Heat1" halign="right"/>
+
+    <Label layout="20.0,160.0,80.0,20.0" text="Fan2 Heat2" halign="right"/>
+
+    <Label layout="20.0,140.0,80.0,20.0" text="Fan3 Heat1+2" halign="right"/>
+
+    <Label layout="190.0,150.0,50.0,20.0" text="Auto" halign="right"/>
+
+    <Label layout="250.0,240.0,100.0,120.0" image="local:|module://BcAirCurtain|module://BcAirCurtain/com/bc/graphics/EHeaterVertOff.svg"/>
+
+    <Label layout="240.0,315.0,77.0,24.0" image="local:|module://BcAirCurtain|module://BcAirCurtain/com/bc/graphics/sensor_duct_avgtemp_left.svg"/>
+
+    <Label layout="240.0,100.0,77.0,24.0" image="local:|module://BcAirCurtain|module://BcAirCurtain/com/bc/graphics/sensor_duct_avgtemp_left.svg"/>
+
+    <BoundLabel layout="140.0,315.0,100.0,20.0">
+      <BoundLabelBinding ord="slot:../S1" statusEffect="none">
+        <ObjectToString name="text" format="%displayName%:%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="140.0,100.0,100.0,20.0">
+      <BoundLabelBinding ord="slot:../S2" statusEffect="none">
+        <ObjectToString name="text" format="%displayName%:%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <GridPane layout="440.0,90.0,120.0,250.0" columnCount="1" columnAlign="fill" uniformColumnWidth="true">
+
+      <ButtonGroupBinding ord="slot:../Mode"/>
+
+      <WsAnnotation name="wsAnnotation" value="42,42,8"/>
+
+      <ValueBinding ord="slot:switchPos">
+        <IEnumToSimple name="enabled" map="baja:Boolean 0,1,2,3=false;4=true;default=true;"/>
+      </ValueBinding>
+
+    </GridPane>
+
+    <BoundLabel layout="140.0,70.0,100.0,20.0">
+      <BoundLabelBinding ord="slot:../SPT" statusEffect="none">
+        <ObjectToString name="text" format="%displayName%:%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="140.0,270.0,100.0,20.0">
+      <BoundLabelBinding ord="slot:PID/out" statusEffect="none">
+        <ObjectToString name="text" format="PID.out:%value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="140.0,250.0,100.0,20.0">
+      <BoundLabelBinding ord="slot:speedInt" statusEffect="none">
+        <ObjectToString name="text" format="Fan Speed:%value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="368.0,190.0,8.0,20.0" halign="right">
+      <BoundLabelBinding ord="slot:Speed3" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="360.0,190.0,8.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:Speed3FB" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="368.0,210.0,8.0,20.0" halign="right">
+      <BoundLabelBinding ord="slot:Speed2" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="360.0,210.0,8.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:Speed2FB" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="368.0,230.0,8.0,20.0" halign="right">
+      <BoundLabelBinding ord="slot:Speed1" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="360.0,230.0,8.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:Speed1FB" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="298.0,295.0,8.0,20.0" halign="right">
+      <BoundLabelBinding ord="slot:Heat1" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="290.0,295.0,8.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:Heat1FB" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="318.0,295.0,8.0,20.0" halign="right">
+      <BoundLabelBinding ord="slot:Heat2" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="310.0,295.0,8.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:Heat2FB" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="360.0,150.0,18.0,20.0" halign="right">
+      <BoundLabelBinding ord="slot:fanAlarm" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/alarmRed.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/alarmGreen.png"/>
+        </IBooleanToSimple>
+        <IBooleanToSimple name="blink"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="360.0,260.0,80.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:../overheatCntr" statusEffect="none">
+        <IBooleanToSimple name="blink"/>
+        <ObjectToString name="text" format="%out.value%"/>
+        <INumericToSimple name="image" map="gx:Image 0.0:0.9=module://BcAirCurtain/com/bc/graphics/alarmGreen.png;1.0:+inf=module://BcAirCurtain/com/bc/graphics/alarmRed.png;default=;"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="200.0,370.0,210.0,20.0">
+      <BoundLabelBinding ord="slot:communicationError" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/failed.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/success.png"/>
+        </IBooleanToSimple>
+        <IBooleanToSimple name="blink"/>
+        <ObjectToString name="text" format="Link:%value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="360.0,90.0,80.0,20.0">
+      <BoundLabelBinding ord="slot:unitEnable" statusEffect="none">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://BcAirCurtain/com/bc/graphics/on16.png"/>
+          <Image name="falseValue" value="module://BcAirCurtain/com/bc/graphics/off16.png"/>
+        </IBooleanToSimple>
+        <ObjectToString name="text" format="%value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="360.0,120.0,80.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:../fanCntr" statusEffect="none">
+        <IBooleanToSimple name="blink"/>
+        <ObjectToString name="text" format="%out.value%"/>
+        <INumericToSimple name="image" map="gx:Image 0.0:1.0=module://BcAirCurtain/com/bc/graphics/alarmGreen.png;1.0:+inf=module://BcAirCurtain/com/bc/graphics/alarmRed.png;default=;"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="140.0,20.0,300.0,30.0" font="bold underline 14.0pt SansSerif">
+      <ValueBinding ord="slot:">
+        <ObjectToString name="text" format="%displayName%"/>
+      </ValueBinding>
+    </Label>
+
+    <BackButton layout="20.0,20.0,70.0,30.0" image="module://icons/x16/arrowLeft.png">
+      <WsAnnotation name="wsAnnotation" value="26,26,8"/>
+    </BackButton>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

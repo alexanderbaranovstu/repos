@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.fcuModule.BKnxGira5142Converter'
+  name='BKnxGira5142Converter'
+  packageName='com.bc.CommonLogic.fcuModule'
+>
+<extends module='baja' class='javax.baja.sys.BComponent'/>
+
+<!-- property modeSwitchIncr -->
+<property name='modeSwitchIncr' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;modeSwitchIncr&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#getModeSwitchIncr</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#setModeSwitchIncr</tag>
+</property>
+
+<!-- property modeSwitchDecr -->
+<property name='modeSwitchDecr' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;modeSwitchDecr&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#getModeSwitchDecr</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#setModeSwitchDecr</tag>
+</property>
+
+<!-- property enumOperation -->
+<property name='enumOperation' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Slot for the &lt;code&gt;enumOperation&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#getEnumOperation</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#setEnumOperation</tag>
+</property>
+
+<!-- property activeFanLevel -->
+<property name='activeFanLevel' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;activeFanLevel&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#getActiveFanLevel</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#setActiveFanLevel</tag>
+</property>
+
+<!-- property activeInactive -->
+<property name='activeInactive' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;activeInactive&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#getActiveInactive</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#setActiveInactive</tag>
+</property>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getModeSwitchIncr() -->
+<method name='getModeSwitchIncr' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;modeSwitchIncr&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#modeSwitchIncr</tag>
+</method>
+
+<!-- public void setModeSwitchIncr(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setModeSwitchIncr' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;modeSwitchIncr&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#modeSwitchIncr</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getModeSwitchDecr() -->
+<method name='getModeSwitchDecr' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;modeSwitchDecr&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#modeSwitchDecr</tag>
+</method>
+
+<!-- public void setModeSwitchDecr(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setModeSwitchDecr' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;modeSwitchDecr&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#modeSwitchDecr</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusEnum getEnumOperation() -->
+<method name='getEnumOperation' public='true'>
+<return module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Get the &lt;code&gt;enumOperation&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#enumOperation</tag>
+</method>
+
+<!-- public void setEnumOperation(baja:javax.baja.status.BStatusEnum v) -->
+<method name='setEnumOperation' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusEnum'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;enumOperation&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#enumOperation</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getActiveFanLevel() -->
+<method name='getActiveFanLevel' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;activeFanLevel&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#activeFanLevel</tag>
+</method>
+
+<!-- public void setActiveFanLevel(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setActiveFanLevel' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;activeFanLevel&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#activeFanLevel</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getActiveInactive() -->
+<method name='getActiveInactive' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;activeInactive&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#activeInactive</tag>
+</method>
+
+<!-- public void setActiveInactive(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setActiveInactive' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;activeInactive&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BKnxGira5142Converter#activeInactive</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public void changed(baja:javax.baja.sys.Property p, baja:javax.baja.sys.Context cx) -->
+<method name='changed' public='true'>
+<parameter name='p' module='baja' class='javax.baja.sys.Property'/>
+<parameter name='cx' module='baja' class='javax.baja.sys.Context'/>
+<return class='void'/>
+</method>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+</class>
+</bajadoc>

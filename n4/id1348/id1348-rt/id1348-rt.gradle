@@ -1,0 +1,24 @@
+/* Module Build File */
+
+description     = "Switch 1-2-3 Speed"
+ext {
+}
+niagaraModule {
+  moduleName = "id1348"
+  preferredSymbol = "id"
+  runtimeProfile = "rt"
+  version = "1.01"
+  certAlias = "abaranov"  
+}
+
+dependencies {
+  compile "Tridium:nre:4.7"
+  compile "Tridium:baja:4.7"
+  compile "Tridium:control-rt:4.7"  
+  compile "Tridium:kitControl-rt:4.7"   
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

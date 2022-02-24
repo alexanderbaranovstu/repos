@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.rotator.BPumpRotator'
+  name='BPumpRotator'
+  packageName='com.bc.CommonLogic.rotator'
+>
+<extends module='baja' class='javax.baja.sys.BComponent'/>
+
+<!-- property rotatePeriod -->
+<property name='rotatePeriod' flags=''>
+<type module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Slot for the &lt;code&gt;rotatePeriod&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#getRotatePeriod</tag>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#setRotatePeriod</tag>
+</property>
+
+<!-- property alarmDelay -->
+<property name='alarmDelay' flags=''>
+<type module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Slot for the &lt;code&gt;alarmDelay&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#getAlarmDelay</tag>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#setAlarmDelay</tag>
+</property>
+
+<!-- property numberOutputs -->
+<property name='numberOutputs' flags=''>
+<type class='int'/>
+<description>Slot for the &lt;code&gt;numberOutputs&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#getNumberOutputs</tag>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#setNumberOutputs</tag>
+</property>
+
+<!-- property Pump1 -->
+<property name='Pump1' flags=''>
+<type module='BCommonLogic' class='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<description>Slot for the &lt;code&gt;Pump1&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#getPump1</tag>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#setPump1</tag>
+</property>
+
+<!-- property Pump2 -->
+<property name='Pump2' flags=''>
+<type module='BCommonLogic' class='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<description>Slot for the &lt;code&gt;Pump2&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#getPump2</tag>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#setPump2</tag>
+</property>
+
+<!-- property Pump3 -->
+<property name='Pump3' flags=''>
+<type module='BCommonLogic' class='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<description>Slot for the &lt;code&gt;Pump3&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#getPump3</tag>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#setPump3</tag>
+</property>
+
+<!-- action onTimerExpired -->
+<action name='onTimerExpired' flags='s'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;onTimerExpired&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#onTimerExpired()</tag>
+</action>
+
+<!-- public baja:javax.baja.sys.BRelTime getRotatePeriod() -->
+<method name='getRotatePeriod' public='true'>
+<return module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Get the &lt;code&gt;rotatePeriod&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#rotatePeriod</tag>
+</method>
+
+<!-- public void setRotatePeriod(baja:javax.baja.sys.BRelTime v) -->
+<method name='setRotatePeriod' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BRelTime'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;rotatePeriod&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#rotatePeriod</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.BRelTime getAlarmDelay() -->
+<method name='getAlarmDelay' public='true'>
+<return module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Get the &lt;code&gt;alarmDelay&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#alarmDelay</tag>
+</method>
+
+<!-- public void setAlarmDelay(baja:javax.baja.sys.BRelTime v) -->
+<method name='setAlarmDelay' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BRelTime'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;alarmDelay&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#alarmDelay</tag>
+</method>
+
+<!-- public int getNumberOutputs() -->
+<method name='getNumberOutputs' public='true'>
+<return class='int'/>
+<description>Get the &lt;code&gt;numberOutputs&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#numberOutputs</tag>
+</method>
+
+<!-- public void setNumberOutputs(int v) -->
+<method name='setNumberOutputs' public='true'>
+<parameter name='v' class='int'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;numberOutputs&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#numberOutputs</tag>
+</method>
+
+<!-- public BCommonLogic:com.bc.CommonLogic.rotator.BPumpUnit getPump1() -->
+<method name='getPump1' public='true'>
+<return module='BCommonLogic' class='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<description>Get the &lt;code&gt;Pump1&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#Pump1</tag>
+</method>
+
+<!-- public void setPump1(BCommonLogic:com.bc.CommonLogic.rotator.BPumpUnit v) -->
+<method name='setPump1' public='true'>
+<parameter name='v' module='BCommonLogic' class='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;Pump1&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#Pump1</tag>
+</method>
+
+<!-- public BCommonLogic:com.bc.CommonLogic.rotator.BPumpUnit getPump2() -->
+<method name='getPump2' public='true'>
+<return module='BCommonLogic' class='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<description>Get the &lt;code&gt;Pump2&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#Pump2</tag>
+</method>
+
+<!-- public void setPump2(BCommonLogic:com.bc.CommonLogic.rotator.BPumpUnit v) -->
+<method name='setPump2' public='true'>
+<parameter name='v' module='BCommonLogic' class='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;Pump2&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#Pump2</tag>
+</method>
+
+<!-- public BCommonLogic:com.bc.CommonLogic.rotator.BPumpUnit getPump3() -->
+<method name='getPump3' public='true'>
+<return module='BCommonLogic' class='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<description>Get the &lt;code&gt;Pump3&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#Pump3</tag>
+</method>
+
+<!-- public void setPump3(BCommonLogic:com.bc.CommonLogic.rotator.BPumpUnit v) -->
+<method name='setPump3' public='true'>
+<parameter name='v' module='BCommonLogic' class='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;Pump3&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#Pump3</tag>
+</method>
+
+<!-- public void onTimerExpired() -->
+<method name='onTimerExpired' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;onTimerExpired&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.rotator.BPumpRotator#onTimerExpired</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public void started() -->
+<method name='started' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doOnTimerExpired() -->
+<method name='doOnTimerExpired' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+</class>
+</bajadoc>

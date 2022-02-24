@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module
+  name = "NSerialReqResp"
+  bajaVersion = "0"
+  vendor = "bclimate"
+  vendorVersion = "3.8.401"
+  description = "Ndriver Request Response framework"
+  preferredSymbol = "ns"
+  buildDate = "17-ноя-21 11:03 MSK"
+  buildMillis = "1637136199509"
+  buildHost = "null"
+>
+
+<dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="bajaui" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="control" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="alarm" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="driver" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="ndriver" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="net" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="serial" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="gx" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="workbench" vendor="Tridium" vendorVersion="3.8"/>
+</dependencies>
+
+<dirs>
+  <dir name="com/bclimate/NSerialReqResp" install="runtime"/>
+  <dir name="com/bclimate/NSerialReqResp/comm" install="runtime"/>
+  <dir name="com/bclimate/NSerialReqResp/point" install="runtime"/>
+  <dir name="com/bclimate/NSerialReqResp/message" install="runtime"/>
+  <dir name="doc" install="doc"/>
+</dirs>
+
+<types>
+  <type name="NSerialReqRespNetwork" class="com.bclimate.NSerialReqResp.BNSerialReqRespNetwork"/>
+  <type name="NSerialReqRespDevice" class="com.bclimate.NSerialReqResp.BNSerialReqRespDevice"/>
+  <type name="NSerialReqRespDeviceFolder" class="com.bclimate.NSerialReqResp.BNSerialReqRespDeviceFolder"/>
+  <type name="NSerialReqRespSerialCommConfig" class="com.bclimate.NSerialReqResp.comm.BNSerialReqRespSerialCommConfig"/>
+  <type name="NSerialReqRespPointDeviceExt" class="com.bclimate.NSerialReqResp.point.BNSerialReqRespPointDeviceExt"/>
+  <type name="NSerialReqRespPointFolder" class="com.bclimate.NSerialReqResp.point.BNSerialReqRespPointFolder"/>
+  <type name="NSerialReqRespProxyExt" class="com.bclimate.NSerialReqResp.point.BNSerialReqRespProxyExt"/>
+</types>
+
+</module>

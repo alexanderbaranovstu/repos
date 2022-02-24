@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module
+  name = "id1359"
+  bajaVersion = "0"
+  vendor = "bclimate"
+  vendorVersion = "3.8.401"
+  description = "Module for Landshaft"
+  preferredSymbol = "ID"
+  buildDate = "16-дек-21 12:02 MSK"
+  buildMillis = "1639645367244"
+  buildHost = "null"
+>
+
+<dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="control" vendor="Tridium" vendorVersion="3.8"/>
+</dependencies>
+
+<dirs>
+  <dir name="com/bc/id1359" install="runtime"/>
+  <dir name="doc" install="doc"/>
+</dirs>
+
+<types>
+	<type name="UnitSate" class="com.bc.id1359.BUnitSate"/>
+  <type name="StateMachine" class="com.bc.id1359.BStateMachine"/>
+  <type name="UnitState" class="com.bc.id1359.BUnitState"/>
+  <type name="SpeedSw" class="com.bc.id1359.BSpeedSw"/>
+  <type name="Contactor" class="com.bc.id1359.BContactor"/>
+  <type name="ContactorState" class="com.bc.id1359.BContactorState"/>
+</types>
+
+</module>

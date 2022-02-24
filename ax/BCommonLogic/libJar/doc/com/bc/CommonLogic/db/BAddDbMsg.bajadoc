@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.db.BAddDbMsg'
+  name='BAddDbMsg'
+  packageName='com.bc.CommonLogic.db'
+>
+<extends module='control' class='javax.baja.control.BStringWritable'/>
+
+<!-- action writeToDb -->
+<action name='writeToDb' flags='s'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;writeToDb&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.db.BAddDbMsg#writeToDb()</tag>
+</action>
+
+<!-- public void writeToDb() -->
+<method name='writeToDb' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;writeToDb&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.db.BAddDbMsg#writeToDb</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public void doWriteToDb() throws java.lang.ClassNotFoundException, java.sql.SQLException -->
+<method name='doWriteToDb' public='true'>
+<return class='void'/>
+<throws class='java.lang.ClassNotFoundException'/>
+<throws class='java.sql.SQLException'/>
+</method>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+</class>
+</bajadoc>

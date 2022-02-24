@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="BcAirCurtain-rt" bajaVersion="0" vendor="bc" vendorVersion="1.52" description="Control Module For Air Curtain" preferredSymbol="AC" nre="true" autoload="true" installable="true" buildMillis="1634879855296" buildHost="LAPTOP-NOADV716" moduleName="BcAirCurtain" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="alarm-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="gx-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="workbench-wb" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="report-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="bajaui-wb" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="kitControl-rt" vendor="Tridium" vendorVersion="4.9"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type name="AirCurtain" class="com.bc.BcAirCurtain.BAirCurtain"/>
+  <type name="AirCurtainState" class="com.bc.BcAirCurtain.BAirCurtainState"/>
+  <type name="AirCurtainSw" class="com.bc.BcAirCurtain.BAirCurtainSw"/>
+  <type name="Pid" class="com.bc.BcAirCurtain.BPid"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

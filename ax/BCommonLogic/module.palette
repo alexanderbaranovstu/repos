@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="1.0">
+<p h="1" m="b=baja" t="b:UnrestrictedFolder">
+
+ <!-- /test -->
+ <p n="test" h="2" t="b:UnrestrictedFolder">
+  <!-- /test/Ahu -->
+  <p n="Ahu" h="3" m="bc=BCommonLogic" t="bc:Ahu">  </p>
+  <!-- /test/ParkingFans -->
+  <p n="ParkingFans" h="5" t="bc:ParkingFans">  </p>
+ </p>
+ 
+ <!-- /rotator -->
+ <p n="rotator" h="7" t="b:UnrestrictedFolder">
+  <!-- /rotator/PumpUnit -->
+  <p n="PumpUnit" h="8" t="bc:PumpUnit">  </p>
+  <!-- /rotator/PumpRotator -->
+  <p n="PumpRotator" h="9" t="bc:PumpRotator">  </p>
+ </p>
+ 
+
+ <!-- /lighting -->
+ <p n="lighting" h="a" t="b:UnrestrictedFolder">
+   <p n="IsmaDaliLamp" h="b" t="bc:IsmaDaliLamp">   </p>
+   <p n="DimOneButton"  t="bc:DimOneButton">   </p>   
+  </p>
+  
+ <!-- /ahu -->
+ <p n="mau" h="c" t="b:UnrestrictedFolder">
+  <!-- /ahu/Equipment -->
+  <p n="Equipment" h="d" t="bc:Equipment">  </p>
+ </p>
+ 
+ <!-- /db -->
+ <p n="db" h="e" t="b:UnrestrictedFolder">
+  <!-- /db/BAddDbMsg -->
+  <p n="AddDbMsg" h="f" t="bc:AddDbMsg">  </p>
+ </p>  
+ <!-- /db -->
+ <p n="fcuModule"  t="b:UnrestrictedFolder">
+  <!-- /db/BAddDbMsg -->
+  <p n="Fcu"  t="bc:Fcu">  </p>
+  <p n="KnxGira5142Converter"  t="bc:KnxGira5142Converter">  </p>
+  <p n="Float2Knx"  t="bc:Float2Knx">  </p>
+  <p n="Knx2float"  t="bc:Knx2float">  </p>
+  <p n="CutMessage"  t="bc:CutMessage">  </p>
+    
+
+  </p>  
+ <!-- /BblindControl -->
+ <p n="blindControl"  t="b:UnrestrictedFolder">
+  <!-- /db/BAddDbMsg -->
+  <p n="BlindControl"  t="bc:BlindControl">  </p>
+ </p>  
+
+</p>
+</bajaObjectGraph>

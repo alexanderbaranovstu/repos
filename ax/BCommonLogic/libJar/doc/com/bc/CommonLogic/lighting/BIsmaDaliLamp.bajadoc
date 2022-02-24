@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.lighting.BIsmaDaliLamp'
+  name='BIsmaDaliLamp'
+  packageName='com.bc.CommonLogic.lighting'
+>
+<extends module='control' class='javax.baja.control.BStringWritable'/>
+
+<!-- property sourceName -->
+<property name='sourceName' flags=''>
+<type module='baja' class='javax.baja.util.BFormat'/>
+<description>Slot for the &lt;code&gt;sourceName&lt;/code&gt; property.
+ Text descriptor for the source name of the alarm. Uses BFormat, but currently only supports lexicons.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#getSourceName</tag>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#setSourceName</tag>
+</property>
+
+<!-- property atHomeSw -->
+<property name='atHomeSw' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;atHomeSw&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#getAtHomeSw</tag>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#setAtHomeSw</tag>
+</property>
+
+<!-- property swIn -->
+<property name='swIn' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;swIn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#getSwIn</tag>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#setSwIn</tag>
+</property>
+
+<!-- property inDim -->
+<property name='inDim' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;inDim&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#getInDim</tag>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#setInDim</tag>
+</property>
+
+<!-- property daliOn -->
+<property name='daliOn' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;daliOn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#getDaliOn</tag>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#setDaliOn</tag>
+</property>
+
+<!-- property daliOff -->
+<property name='daliOff' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;daliOff&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#getDaliOff</tag>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#setDaliOff</tag>
+</property>
+
+<!-- property outDim -->
+<property name='outDim' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;outDim&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#getOutDim</tag>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#setOutDim</tag>
+</property>
+
+<!-- action onCmd -->
+<action name='onCmd' flags='s'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;onCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#onCmd()</tag>
+</action>
+
+<!-- action offCmd -->
+<action name='offCmd' flags='s'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;offCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#offCmd()</tag>
+</action>
+
+<!-- action atHomeCmd -->
+<action name='atHomeCmd' flags='s'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;atHomeCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#atHomeCmd()</tag>
+</action>
+
+<!-- action notAtHomeCmd -->
+<action name='notAtHomeCmd' flags='s'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;notAtHomeCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#notAtHomeCmd()</tag>
+</action>
+
+<!-- action dimCmd -->
+<action name='dimCmd' flags='s'>
+<parameter name='arg' module='baja' class='javax.baja.sys.BDouble'/>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;dimCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#dimCmd()</tag>
+</action>
+
+<!-- public baja:javax.baja.util.BFormat getSourceName() -->
+<method name='getSourceName' public='true'>
+<return module='baja' class='javax.baja.util.BFormat'/>
+<description>Get the &lt;code&gt;sourceName&lt;/code&gt; property.
+ Text descriptor for the source name of the alarm. Uses BFormat, but currently only supports lexicons.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#sourceName</tag>
+</method>
+
+<!-- public void setSourceName(baja:javax.baja.util.BFormat v) -->
+<method name='setSourceName' public='true'>
+<parameter name='v' module='baja' class='javax.baja.util.BFormat'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;sourceName&lt;/code&gt; property.
+ Text descriptor for the source name of the alarm. Uses BFormat, but currently only supports lexicons.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#sourceName</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getAtHomeSw() -->
+<method name='getAtHomeSw' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;atHomeSw&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#atHomeSw</tag>
+</method>
+
+<!-- public void setAtHomeSw(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setAtHomeSw' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;atHomeSw&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#atHomeSw</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getSwIn() -->
+<method name='getSwIn' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;swIn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#swIn</tag>
+</method>
+
+<!-- public void setSwIn(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setSwIn' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;swIn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#swIn</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getInDim() -->
+<method name='getInDim' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;inDim&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#inDim</tag>
+</method>
+
+<!-- public void setInDim(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setInDim' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;inDim&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#inDim</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getDaliOn() -->
+<method name='getDaliOn' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;daliOn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#daliOn</tag>
+</method>
+
+<!-- public void setDaliOn(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setDaliOn' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;daliOn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#daliOn</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getDaliOff() -->
+<method name='getDaliOff' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;daliOff&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#daliOff</tag>
+</method>
+
+<!-- public void setDaliOff(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setDaliOff' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;daliOff&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#daliOff</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getOutDim() -->
+<method name='getOutDim' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;outDim&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#outDim</tag>
+</method>
+
+<!-- public void setOutDim(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setOutDim' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;outDim&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#outDim</tag>
+</method>
+
+<!-- public void onCmd() -->
+<method name='onCmd' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;onCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#onCmd</tag>
+</method>
+
+<!-- public void offCmd() -->
+<method name='offCmd' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;offCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#offCmd</tag>
+</method>
+
+<!-- public void atHomeCmd() -->
+<method name='atHomeCmd' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;atHomeCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#atHomeCmd</tag>
+</method>
+
+<!-- public void notAtHomeCmd() -->
+<method name='notAtHomeCmd' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;notAtHomeCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#notAtHomeCmd</tag>
+</method>
+
+<!-- public void dimCmd(baja:javax.baja.sys.BDouble arg) -->
+<method name='dimCmd' public='true'>
+<parameter name='arg' module='baja' class='javax.baja.sys.BDouble'/>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;dimCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.lighting.BIsmaDaliLamp#dimCmd</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public void changed(baja:javax.baja.sys.Property p, baja:javax.baja.sys.Context cx) -->
+<method name='changed' public='true'>
+<parameter name='p' module='baja' class='javax.baja.sys.Property'/>
+<parameter name='cx' module='baja' class='javax.baja.sys.Context'/>
+<return class='void'/>
+</method>
+
+<!-- public void doOnCmd() -->
+<method name='doOnCmd' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doOffCmd() -->
+<method name='doOffCmd' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doAtHomeCmd() -->
+<method name='doAtHomeCmd' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doNotAtHomeCmd() -->
+<method name='doNotAtHomeCmd' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doDimCmd(baja:javax.baja.sys.BDouble v) -->
+<method name='doDimCmd' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BDouble'/>
+<return class='void'/>
+</method>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+</class>
+</bajadoc>

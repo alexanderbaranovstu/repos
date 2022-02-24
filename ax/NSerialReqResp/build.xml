@@ -1,0 +1,30 @@
+<!-- Module Build File -->
+
+<module
+  name = "NSerialReqResp"
+  bajaVersion = "0"
+  preferredSymbol = "ns"
+  description = "Ndriver Request Response framework"
+  vendor = "bclimate"
+>
+
+  <!-- Dependencies -->
+  <dependency name="nre"     vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="baja"    vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="bajaui"  vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="control" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="alarm"   vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="driver"  vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="ndriver" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="net"     vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="serial"  vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="gx"      vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="workbench" vendor="Tridium" vendorVersion="3.8"/>
+
+  <!-- Packages -->
+  <package name="com.bclimate.NSerialReqResp" />
+  <package name="com.bclimate.NSerialReqResp.comm" />
+  <package name="com.bclimate.NSerialReqResp.point" />
+  <package name="com.bclimate.NSerialReqResp.message" />
+
+</module>

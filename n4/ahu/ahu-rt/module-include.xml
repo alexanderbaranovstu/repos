@@ -1,0 +1,21 @@
+<!-- Module Include File -->
+
+<!-- Types -->
+<types>
+  <!-- Type Example:
+  <type name="MyClass" class="com.acme.BMyClass"/>
+  -->
+    <type name="AhuStateMachine" class="com.bc.ahu.BAhuStateMachine"/>
+    <type name="AhuState" class="com.bc.ahu.BAhuState"/>  
+    <type name="EquipmentFMode" class="com.bc.ahu.BEquipmentFMode"/>     
+    <type name="EquipmentFWinter" class="com.bc.ahu.BEquipmentFWinter"/>   
+    <type name="Pos" class="com.bc.ahu.BPos"/>   
+    <type name="MixCamera" class="com.bc.ahu.BMixCamera"/>    
+    <type name="Pid" class="com.bc.ahu.BPid"/>  
+    <type name="Cooler" class="com.bc.ahu.BCooler"/>  
+    <type name="Heater" class="com.bc.ahu.BHeater"/>  
+    <type name="NumericValue" class="com.bc.ahu.BNumericValue"/>    
+    <type name="BooleanValue" class="com.bc.ahu.BBooleanValue"/>      
+    <type name="EnumValue" class="com.bc.ahu.BEnumValue"/>      
+    <type name="StringValue" class="com.bc.ahu.BStringValue"/>        
+</types>

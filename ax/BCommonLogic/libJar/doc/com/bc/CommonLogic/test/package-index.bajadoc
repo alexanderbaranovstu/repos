@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<package
+  module='BCommonLogic'
+  name='com.bc.CommonLogic.test'
+>
+<class qualifiedName='com.bc.CommonLogic.test.BAhu'/>
+<class qualifiedName='com.bc.CommonLogic.test.BParkingFans'/>
+</package>
+</bajadoc>

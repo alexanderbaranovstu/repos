@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="1.0">
+<p m="b=baja" t="b:Folder">
+
+
+ <!-- /lighting -->
+  <p n="StateMachine" h="2" m="ID=id1359" t="ID:StateMachine">  </p>
+  <p n="SpeedSw" h="3" m="ID=id1359" t="ID:SpeedSw">  </p>
+
+</p>
+</bajaObjectGraph>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+	 height="100px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<g id="Duct_x5F_Vert_x5F_End_x5F_Up">
+	<g>
+		<g>
+			<g>
+				<path style="fill:#E7E9EA;" d="M70,0.909l0.078,99.044L1.625,100L2,0.002C2,0.002,65.231,0,66.887,0S70,0.909,70,0.909z"/>
+				<g>
+					<g>
+						<polygon style="fill:#DDDFE1;" points="98.493,99.997 98.493,19.907 70.001,0.909 68.493,0.281 68.493,99.952 						"/>
+						<path style="fill:#E7E9EA;" d="M30,99.967l0-80.028c0,0-20.772-14.791-27.083-19.001C1.926,0.277,2.061,0.059,2,0.002
+							C1.313,0,0,0.92,0,3.045s0,96.953,0,96.953L30,99.967z"/>
+					</g>
+					<rect x="30" y="20" style="fill:#6A7276;" width="1.507" height="79.996"/>
+					<rect x="98.493" y="20" style="fill:#6A7276;" width="1.507" height="79.996"/>
+				</g>
+			</g>
+			
+				<line style="fill:none;stroke:#ABAAA9;stroke-width:0.6;stroke-miterlimit:10;" x1="68.493" y1="0.281" x2="68.493" y2="99.952"/>
+		</g>
+		<path style="fill:#6A7276;" d="M31.507,20.001c0,0-26.581-17.721-27.703-18.469S3.792,0.784,3.792,0.784L2.167,0L2,0.002
+			c0,0-1.337,0.44,0.481,1.651S30,20.001,30,20.001H31.507z"/>
+		<polygon style="fill:#6A7276;" points="69.778,0.783 2.683,0.783 2.167,0 68.493,0 		"/>
+		<path style="fill:#6A7276;" d="M100,20.001c0,0-26.591-17.697-28.579-19.046C70.016,0,68.656,0,68.656,0l-0.163,0v0.783
+			c0,0,0.956-0.146,2.188,0.675s27.812,18.542,27.812,18.542H100z"/>
+	</g>
+</g>
+<g id="Layer_1">
+</g>
+</svg>

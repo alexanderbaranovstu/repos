@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.test.BAhu'
+  name='BAhu'
+  packageName='com.bc.CommonLogic.test'
+>
+<extends module='control' class='javax.baja.control.BStringWritable'/>
+
+<!-- action ControlAction -->
+<action name='ControlAction' flags='o'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;ControlAction&lt;/code&gt; action.
+ Set the fallback property value.</description>
+<tag name='see'>com.bc.CommonLogic.test.BAhu#ControlAction()</tag>
+</action>
+
+<!-- public void ControlAction() -->
+<method name='ControlAction' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;ControlAction&lt;/code&gt; action.
+ Set the fallback property value.</description>
+<tag name='see'>com.bc.CommonLogic.test.BAhu#ControlAction</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public void doControlAction() -->
+<method name='doControlAction' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+</class>
+</bajadoc>

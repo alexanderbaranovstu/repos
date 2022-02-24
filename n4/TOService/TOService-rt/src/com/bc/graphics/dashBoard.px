@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="gx"/>
+  <module name="report"/>
+  <module name="workbench"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1200.0,800.0">
+
+    <Label layout="400.0,20.0,170.0000000000001,20.0" text="Control" background="silver">
+      <ValueBinding ord="slot:" popupEnabled="false"/>
+    </Label>
+
+    <Label layout="590.0,20.0,31.0,31.0" image="module://fcuModule/com/bc/graphics/img_20Lable.png"/>
+
+    <GridTable layout="140.0,150.0,620.0,320.0">
+      <WbViewBinding ord="slot:grid"/>
+    </GridTable>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

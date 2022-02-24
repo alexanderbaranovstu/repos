@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="TOService-rt" bajaVersion="0" vendor="bc" vendorVersion="1.12" description="Units as service entity, service cards" preferredSymbol="TS" nre="true" autoload="true" installable="true" buildMillis="1635248104268" buildHost="LAPTOP-NOADV716" moduleName="TOService" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="alarm-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="gx-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="workbench-wb" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="report-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="bajaui-wb" vendor="Tridium" vendorVersion="4.9"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type name="Site" class="com.bc.TOService.BSite"/>
+  <type name="Floor" class="com.bc.TOService.BFloor"/>
+  <type name="Area" class="com.bc.TOService.BArea"/>
+  <type name="Equipment" class="com.bc.TOService.BEquipment"/>
+  <type name="EquipmentAction" class="com.bc.TOService.BEquipmentAction"/>
+  <type name="SingleOperation" class="com.bc.TOService.BSingleOperation"/>
+  <type name="ReglamentAction" class="com.bc.TOService.BReglamentAction"/>
+  <type name="AlarmAction" class="com.bc.TOService.BAlarmAction"/>
+  <type name="UpgradeAction" class="com.bc.TOService.BUpgradeAction"/>
+  <type name="WarantyAction" class="com.bc.TOService.BWarantyAction"/>
+  <type name="AuditCountOfActions" class="com.bc.TOService.BAuditCountOfActions"/>
+  <type name="AuditCountOfEquipment" class="com.bc.TOService.BAuditCountOfEquipment"/>
+  <type name="AuditLaborOfActions" class="com.bc.TOService.BAuditLaborOfActions"/>
+  <type name="SumCalcUtil" class="com.bc.TOService.BSumCalcUtil"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+ <moduleParts>
+  <modulePart name="TOService-ux" runtimeProfile="ux"/>
+  <modulePart name="TOService-se" runtimeProfile="se"/>
+  <modulePart name="TOService-wb" runtimeProfile="wb"/>
+ </moduleParts>
+</module>

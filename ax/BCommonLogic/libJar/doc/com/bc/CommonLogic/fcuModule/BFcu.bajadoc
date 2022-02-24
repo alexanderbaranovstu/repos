@@ -1,0 +1,1352 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.fcuModule.BFcu'
+  name='BFcu'
+  packageName='com.bc.CommonLogic.fcuModule'
+>
+<extends module='control' class='javax.baja.control.BStringWritable'/>
+
+<!-- property fcu -->
+<property name='fcu' flags=''>
+<type module='baja' class='javax.baja.agent.BPxView'/>
+<description>Slot for the &lt;code&gt;fcu&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getFcu</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setFcu</tag>
+</property>
+
+<!-- property in1 -->
+<property name='in1' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in1&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn1</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn1</tag>
+</property>
+
+<!-- property in2 -->
+<property name='in2' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in2&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn2</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn2</tag>
+</property>
+
+<!-- property in3 -->
+<property name='in3' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in3&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn3</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn3</tag>
+</property>
+
+<!-- property in4 -->
+<property name='in4' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in4&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn4</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn4</tag>
+</property>
+
+<!-- property in5 -->
+<property name='in5' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in5&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn5</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn5</tag>
+</property>
+
+<!-- property in6 -->
+<property name='in6' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in6&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn6</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn6</tag>
+</property>
+
+<!-- property in7 -->
+<property name='in7' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in7&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn7</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn7</tag>
+</property>
+
+<!-- property in8 -->
+<property name='in8' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in8&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn8</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn8</tag>
+</property>
+
+<!-- property in9 -->
+<property name='in9' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in9&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn9</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn9</tag>
+</property>
+
+<!-- property in10 -->
+<property name='in10' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in10&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn10</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn10</tag>
+</property>
+
+<!-- property in11 -->
+<property name='in11' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in11&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn11</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn11</tag>
+</property>
+
+<!-- property in12 -->
+<property name='in12' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in12&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn12</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn12</tag>
+</property>
+
+<!-- property in13 -->
+<property name='in13' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in13&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn13</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn13</tag>
+</property>
+
+<!-- property in14 -->
+<property name='in14' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in14&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn14</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn14</tag>
+</property>
+
+<!-- property in15 -->
+<property name='in15' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in15&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn15</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn15</tag>
+</property>
+
+<!-- property in16 -->
+<property name='in16' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;in16&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getIn16</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setIn16</tag>
+</property>
+
+<!-- property fallback -->
+<property name='fallback' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusString'/>
+<description>Slot for the &lt;code&gt;fallback&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getFallback</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setFallback</tag>
+</property>
+
+<!-- property overrideExpiration -->
+<property name='overrideExpiration' flags='rho'>
+<type module='baja' class='javax.baja.sys.BAbsTime'/>
+<description>Slot for the &lt;code&gt;overrideExpiration&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getOverrideExpiration</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setOverrideExpiration</tag>
+</property>
+
+<!-- property sourceName -->
+<property name='sourceName' flags='s'>
+<type module='baja' class='javax.baja.util.BFormat'/>
+<description>Slot for the &lt;code&gt;sourceName&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSourceName</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSourceName</tag>
+</property>
+
+<!-- property homeOrd -->
+<property name='homeOrd' flags='s'>
+<type module='baja' class='javax.baja.naming.BOrd'/>
+<description>Slot for the &lt;code&gt;homeOrd&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getHomeOrd</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setHomeOrd</tag>
+</property>
+
+<!-- property stopFanAtNonAction -->
+<property name='stopFanAtNonAction' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;stopFanAtNonAction&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getStopFanAtNonAction</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setStopFanAtNonAction</tag>
+</property>
+
+<!-- property sp -->
+<property name='sp' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;sp&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSp</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSp</tag>
+</property>
+
+<!-- property deadBand -->
+<property name='deadBand' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;deadBand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getDeadBand</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setDeadBand</tag>
+</property>
+
+<!-- property speedRequest -->
+<property name='speedRequest' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;speedRequest&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSpeedRequest</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSpeedRequest</tag>
+</property>
+
+<!-- property speedInt -->
+<property name='speedInt' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;speedInt&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSpeedInt</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSpeedInt</tag>
+</property>
+
+<!-- property Speed1FB -->
+<property name='Speed1FB' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;Speed1FB&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSpeed1FB</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSpeed1FB</tag>
+</property>
+
+<!-- property Speed2FB -->
+<property name='Speed2FB' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;Speed2FB&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSpeed2FB</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSpeed2FB</tag>
+</property>
+
+<!-- property Speed3FB -->
+<property name='Speed3FB' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;Speed3FB&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSpeed3FB</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSpeed3FB</tag>
+</property>
+
+<!-- property Speed1 -->
+<property name='Speed1' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;Speed1&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSpeed1</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSpeed1</tag>
+</property>
+
+<!-- property Speed2 -->
+<property name='Speed2' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;Speed2&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSpeed2</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSpeed2</tag>
+</property>
+
+<!-- property Speed3 -->
+<property name='Speed3' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;Speed3&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getSpeed3</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setSpeed3</tag>
+</property>
+
+<!-- property fcuType -->
+<property name='fcuType' flags='s'>
+<type module='control' class='javax.baja.control.BEnumWritable'/>
+<description>Slot for the &lt;code&gt;fcuType&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getFcuType</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setFcuType</tag>
+</property>
+
+<!-- property operationLocal -->
+<property name='operationLocal' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Slot for the &lt;code&gt;operationLocal&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getOperationLocal</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setOperationLocal</tag>
+</property>
+
+<!-- property operationExtern -->
+<property name='operationExtern' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Slot for the &lt;code&gt;operationExtern&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getOperationExtern</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setOperationExtern</tag>
+</property>
+
+<!-- property operation -->
+<property name='operation' flags='s'>
+<type module='control' class='javax.baja.control.BEnumWritable'/>
+<description>Slot for the &lt;code&gt;operation&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getOperation</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setOperation</tag>
+</property>
+
+<!-- property hcMode -->
+<property name='hcMode' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Slot for the &lt;code&gt;hcMode&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getHcMode</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setHcMode</tag>
+</property>
+
+<!-- property valveCool -->
+<property name='valveCool' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;valveCool&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getValveCool</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setValveCool</tag>
+</property>
+
+<!-- property valveHeat -->
+<property name='valveHeat' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;valveHeat&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getValveHeat</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setValveHeat</tag>
+</property>
+
+<!-- property executeTime -->
+<property name='executeTime' flags='s'>
+<type module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Slot for the &lt;code&gt;executeTime&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getExecuteTime</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setExecuteTime</tag>
+</property>
+
+<!-- property PID -->
+<property name='PID' flags='s'>
+<type module='BCommonLogic' class='com.bc.CommonLogic.fcuModule.BPid'/>
+<description>Slot for the &lt;code&gt;PID&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getPID</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setPID</tag>
+</property>
+
+<!-- property scheduleLocal -->
+<property name='scheduleLocal' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;scheduleLocal&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getScheduleLocal</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setScheduleLocal</tag>
+</property>
+
+<!-- property scheduleExtern -->
+<property name='scheduleExtern' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;scheduleExtern&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getScheduleExtern</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setScheduleExtern</tag>
+</property>
+
+<!-- property stateAlarm -->
+<property name='stateAlarm' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;stateAlarm&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getStateAlarm</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setStateAlarm</tag>
+</property>
+
+<!-- property alarmDelay -->
+<property name='alarmDelay' flags='s'>
+<type module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Slot for the &lt;code&gt;alarmDelay&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getAlarmDelay</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setAlarmDelay</tag>
+</property>
+
+<!-- property communicationError -->
+<property name='communicationError' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;communicationError&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getCommunicationError</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setCommunicationError</tag>
+</property>
+
+<!-- property controlError -->
+<property name='controlError' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Slot for the &lt;code&gt;controlError&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getControlError</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setControlError</tag>
+</property>
+
+<!-- property deltaSpPv -->
+<property name='deltaSpPv' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;deltaSpPv&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getDeltaSpPv</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setDeltaSpPv</tag>
+</property>
+
+<!-- property enumSh -->
+<property name='enumSh' flags='s'>
+<type module='schedule' class='javax.baja.schedule.BEnumSchedule'/>
+<description>Slot for the &lt;code&gt;enumSh&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#getEnumSh</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setEnumSh</tag>
+</property>
+
+<!-- action emergencyOverride -->
+<action name='emergencyOverride' flags='h'>
+<parameter name='arg' module='baja' class='javax.baja.sys.BString'/>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;emergencyOverride&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#emergencyOverride()</tag>
+</action>
+
+<!-- action emergencyAuto -->
+<action name='emergencyAuto' flags='h'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;emergencyAuto&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#emergencyAuto()</tag>
+</action>
+
+<!-- action override -->
+<action name='override' flags='ho'>
+<parameter name='arg' module='control' class='javax.baja.control.util.BStringOverride'/>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;override&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#override()</tag>
+</action>
+
+<!-- action auto -->
+<action name='auto' flags='ho'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;auto&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#auto()</tag>
+</action>
+
+<!-- action set -->
+<action name='set' flags='ho'>
+<parameter name='arg' module='baja' class='javax.baja.sys.BString'/>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;set&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#set()</tag>
+</action>
+
+<!-- action timerExpired -->
+<action name='timerExpired' flags='h'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;timerExpired&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#timerExpired()</tag>
+</action>
+
+<!-- action setAlarm -->
+<action name='setAlarm' flags='h'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;setAlarm&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setAlarm()</tag>
+</action>
+
+<!-- action resetAlarm -->
+<action name='resetAlarm' flags='h'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;resetAlarm&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#resetAlarm()</tag>
+</action>
+
+<!-- public baja:javax.baja.agent.BPxView getFcu() -->
+<method name='getFcu' public='true'>
+<return module='baja' class='javax.baja.agent.BPxView'/>
+<description>Get the &lt;code&gt;fcu&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#fcu</tag>
+</method>
+
+<!-- public void setFcu(baja:javax.baja.agent.BPxView v) -->
+<method name='setFcu' public='true'>
+<parameter name='v' module='baja' class='javax.baja.agent.BPxView'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;fcu&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#fcu</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn1() -->
+<method name='getIn1' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in1&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in1</tag>
+</method>
+
+<!-- public void setIn1(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn1' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in1&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in1</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn2() -->
+<method name='getIn2' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in2&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in2</tag>
+</method>
+
+<!-- public void setIn2(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn2' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in2&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in2</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn3() -->
+<method name='getIn3' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in3&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in3</tag>
+</method>
+
+<!-- public void setIn3(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn3' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in3&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in3</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn4() -->
+<method name='getIn4' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in4&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in4</tag>
+</method>
+
+<!-- public void setIn4(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn4' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in4&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in4</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn5() -->
+<method name='getIn5' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in5&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in5</tag>
+</method>
+
+<!-- public void setIn5(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn5' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in5&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in5</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn6() -->
+<method name='getIn6' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in6&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in6</tag>
+</method>
+
+<!-- public void setIn6(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn6' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in6&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in6</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn7() -->
+<method name='getIn7' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in7&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in7</tag>
+</method>
+
+<!-- public void setIn7(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn7' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in7&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in7</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn8() -->
+<method name='getIn8' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in8&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in8</tag>
+</method>
+
+<!-- public void setIn8(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn8' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in8&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in8</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn9() -->
+<method name='getIn9' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in9&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in9</tag>
+</method>
+
+<!-- public void setIn9(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn9' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in9&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in9</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn10() -->
+<method name='getIn10' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in10&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in10</tag>
+</method>
+
+<!-- public void setIn10(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn10' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in10&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in10</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn11() -->
+<method name='getIn11' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in11&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in11</tag>
+</method>
+
+<!-- public void setIn11(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn11' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in11&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in11</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn12() -->
+<method name='getIn12' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in12&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in12</tag>
+</method>
+
+<!-- public void setIn12(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn12' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in12&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in12</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn13() -->
+<method name='getIn13' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in13&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in13</tag>
+</method>
+
+<!-- public void setIn13(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn13' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in13&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in13</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn14() -->
+<method name='getIn14' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in14&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in14</tag>
+</method>
+
+<!-- public void setIn14(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn14' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in14&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in14</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn15() -->
+<method name='getIn15' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in15&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in15</tag>
+</method>
+
+<!-- public void setIn15(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn15' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in15&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in15</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getIn16() -->
+<method name='getIn16' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;in16&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in16</tag>
+</method>
+
+<!-- public void setIn16(baja:javax.baja.status.BStatusString v) -->
+<method name='setIn16' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;in16&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#in16</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusString getFallback() -->
+<method name='getFallback' public='true'>
+<return module='baja' class='javax.baja.status.BStatusString'/>
+<description>Get the &lt;code&gt;fallback&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#fallback</tag>
+</method>
+
+<!-- public void setFallback(baja:javax.baja.status.BStatusString v) -->
+<method name='setFallback' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusString'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;fallback&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#fallback</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.BAbsTime getOverrideExpiration() -->
+<method name='getOverrideExpiration' public='true'>
+<return module='baja' class='javax.baja.sys.BAbsTime'/>
+<description>Get the &lt;code&gt;overrideExpiration&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#overrideExpiration</tag>
+</method>
+
+<!-- public void setOverrideExpiration(baja:javax.baja.sys.BAbsTime v) -->
+<method name='setOverrideExpiration' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BAbsTime'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;overrideExpiration&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#overrideExpiration</tag>
+</method>
+
+<!-- public baja:javax.baja.util.BFormat getSourceName() -->
+<method name='getSourceName' public='true'>
+<return module='baja' class='javax.baja.util.BFormat'/>
+<description>Get the &lt;code&gt;sourceName&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#sourceName</tag>
+</method>
+
+<!-- public void setSourceName(baja:javax.baja.util.BFormat v) -->
+<method name='setSourceName' public='true'>
+<parameter name='v' module='baja' class='javax.baja.util.BFormat'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;sourceName&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#sourceName</tag>
+</method>
+
+<!-- public baja:javax.baja.naming.BOrd getHomeOrd() -->
+<method name='getHomeOrd' public='true'>
+<return module='baja' class='javax.baja.naming.BOrd'/>
+<description>Get the &lt;code&gt;homeOrd&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#homeOrd</tag>
+</method>
+
+<!-- public void setHomeOrd(baja:javax.baja.naming.BOrd v) -->
+<method name='setHomeOrd' public='true'>
+<parameter name='v' module='baja' class='javax.baja.naming.BOrd'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;homeOrd&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#homeOrd</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getStopFanAtNonAction() -->
+<method name='getStopFanAtNonAction' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;stopFanAtNonAction&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#stopFanAtNonAction</tag>
+</method>
+
+<!-- public void setStopFanAtNonAction(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setStopFanAtNonAction' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;stopFanAtNonAction&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#stopFanAtNonAction</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getSp() -->
+<method name='getSp' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;sp&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#sp</tag>
+</method>
+
+<!-- public void setSp(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setSp' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;sp&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#sp</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getDeadBand() -->
+<method name='getDeadBand' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;deadBand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#deadBand</tag>
+</method>
+
+<!-- public void setDeadBand(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setDeadBand' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;deadBand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#deadBand</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getSpeedRequest() -->
+<method name='getSpeedRequest' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;speedRequest&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#speedRequest</tag>
+</method>
+
+<!-- public void setSpeedRequest(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setSpeedRequest' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;speedRequest&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#speedRequest</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getSpeedInt() -->
+<method name='getSpeedInt' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;speedInt&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#speedInt</tag>
+</method>
+
+<!-- public void setSpeedInt(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setSpeedInt' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;speedInt&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#speedInt</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getSpeed1FB() -->
+<method name='getSpeed1FB' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;Speed1FB&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed1FB</tag>
+</method>
+
+<!-- public void setSpeed1FB(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setSpeed1FB' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;Speed1FB&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed1FB</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getSpeed2FB() -->
+<method name='getSpeed2FB' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;Speed2FB&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed2FB</tag>
+</method>
+
+<!-- public void setSpeed2FB(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setSpeed2FB' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;Speed2FB&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed2FB</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getSpeed3FB() -->
+<method name='getSpeed3FB' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;Speed3FB&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed3FB</tag>
+</method>
+
+<!-- public void setSpeed3FB(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setSpeed3FB' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;Speed3FB&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed3FB</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getSpeed1() -->
+<method name='getSpeed1' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;Speed1&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed1</tag>
+</method>
+
+<!-- public void setSpeed1(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setSpeed1' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;Speed1&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed1</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getSpeed2() -->
+<method name='getSpeed2' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;Speed2&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed2</tag>
+</method>
+
+<!-- public void setSpeed2(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setSpeed2' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;Speed2&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed2</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getSpeed3() -->
+<method name='getSpeed3' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;Speed3&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed3</tag>
+</method>
+
+<!-- public void setSpeed3(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setSpeed3' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;Speed3&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#Speed3</tag>
+</method>
+
+<!-- public control:javax.baja.control.BEnumWritable getFcuType() -->
+<method name='getFcuType' public='true'>
+<return module='control' class='javax.baja.control.BEnumWritable'/>
+<description>Get the &lt;code&gt;fcuType&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#fcuType</tag>
+</method>
+
+<!-- public void setFcuType(control:javax.baja.control.BEnumWritable v) -->
+<method name='setFcuType' public='true'>
+<parameter name='v' module='control' class='javax.baja.control.BEnumWritable'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;fcuType&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#fcuType</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusEnum getOperationLocal() -->
+<method name='getOperationLocal' public='true'>
+<return module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Get the &lt;code&gt;operationLocal&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#operationLocal</tag>
+</method>
+
+<!-- public void setOperationLocal(baja:javax.baja.status.BStatusEnum v) -->
+<method name='setOperationLocal' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusEnum'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;operationLocal&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#operationLocal</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusEnum getOperationExtern() -->
+<method name='getOperationExtern' public='true'>
+<return module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Get the &lt;code&gt;operationExtern&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#operationExtern</tag>
+</method>
+
+<!-- public void setOperationExtern(baja:javax.baja.status.BStatusEnum v) -->
+<method name='setOperationExtern' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusEnum'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;operationExtern&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#operationExtern</tag>
+</method>
+
+<!-- public control:javax.baja.control.BEnumWritable getOperation() -->
+<method name='getOperation' public='true'>
+<return module='control' class='javax.baja.control.BEnumWritable'/>
+<description>Get the &lt;code&gt;operation&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#operation</tag>
+</method>
+
+<!-- public void setOperation(control:javax.baja.control.BEnumWritable v) -->
+<method name='setOperation' public='true'>
+<parameter name='v' module='control' class='javax.baja.control.BEnumWritable'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;operation&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#operation</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusEnum getHcMode() -->
+<method name='getHcMode' public='true'>
+<return module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Get the &lt;code&gt;hcMode&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#hcMode</tag>
+</method>
+
+<!-- public void setHcMode(baja:javax.baja.status.BStatusEnum v) -->
+<method name='setHcMode' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusEnum'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;hcMode&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#hcMode</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getValveCool() -->
+<method name='getValveCool' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;valveCool&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#valveCool</tag>
+</method>
+
+<!-- public void setValveCool(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setValveCool' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;valveCool&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#valveCool</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getValveHeat() -->
+<method name='getValveHeat' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;valveHeat&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#valveHeat</tag>
+</method>
+
+<!-- public void setValveHeat(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setValveHeat' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;valveHeat&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#valveHeat</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.BRelTime getExecuteTime() -->
+<method name='getExecuteTime' public='true'>
+<return module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Get the &lt;code&gt;executeTime&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#executeTime</tag>
+</method>
+
+<!-- public void setExecuteTime(baja:javax.baja.sys.BRelTime v) -->
+<method name='setExecuteTime' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BRelTime'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;executeTime&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#executeTime</tag>
+</method>
+
+<!-- public BCommonLogic:com.bc.CommonLogic.fcuModule.BPid getPID() -->
+<method name='getPID' public='true'>
+<return module='BCommonLogic' class='com.bc.CommonLogic.fcuModule.BPid'/>
+<description>Get the &lt;code&gt;PID&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#PID</tag>
+</method>
+
+<!-- public void setPID(BCommonLogic:com.bc.CommonLogic.fcuModule.BPid v) -->
+<method name='setPID' public='true'>
+<parameter name='v' module='BCommonLogic' class='com.bc.CommonLogic.fcuModule.BPid'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;PID&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#PID</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getScheduleLocal() -->
+<method name='getScheduleLocal' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;scheduleLocal&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#scheduleLocal</tag>
+</method>
+
+<!-- public void setScheduleLocal(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setScheduleLocal' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;scheduleLocal&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#scheduleLocal</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getScheduleExtern() -->
+<method name='getScheduleExtern' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;scheduleExtern&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#scheduleExtern</tag>
+</method>
+
+<!-- public void setScheduleExtern(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setScheduleExtern' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;scheduleExtern&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#scheduleExtern</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getStateAlarm() -->
+<method name='getStateAlarm' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;stateAlarm&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#stateAlarm</tag>
+</method>
+
+<!-- public void setStateAlarm(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setStateAlarm' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;stateAlarm&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#stateAlarm</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.BRelTime getAlarmDelay() -->
+<method name='getAlarmDelay' public='true'>
+<return module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Get the &lt;code&gt;alarmDelay&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#alarmDelay</tag>
+</method>
+
+<!-- public void setAlarmDelay(baja:javax.baja.sys.BRelTime v) -->
+<method name='setAlarmDelay' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BRelTime'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;alarmDelay&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#alarmDelay</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getCommunicationError() -->
+<method name='getCommunicationError' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;communicationError&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#communicationError</tag>
+</method>
+
+<!-- public void setCommunicationError(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setCommunicationError' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;communicationError&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#communicationError</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusEnum getControlError() -->
+<method name='getControlError' public='true'>
+<return module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Get the &lt;code&gt;controlError&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#controlError</tag>
+</method>
+
+<!-- public void setControlError(baja:javax.baja.status.BStatusEnum v) -->
+<method name='setControlError' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusEnum'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;controlError&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#controlError</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getDeltaSpPv() -->
+<method name='getDeltaSpPv' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;deltaSpPv&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#deltaSpPv</tag>
+</method>
+
+<!-- public void setDeltaSpPv(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setDeltaSpPv' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;deltaSpPv&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#deltaSpPv</tag>
+</method>
+
+<!-- public schedule:javax.baja.schedule.BEnumSchedule getEnumSh() -->
+<method name='getEnumSh' public='true'>
+<return module='schedule' class='javax.baja.schedule.BEnumSchedule'/>
+<description>Get the &lt;code&gt;enumSh&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#enumSh</tag>
+</method>
+
+<!-- public void setEnumSh(schedule:javax.baja.schedule.BEnumSchedule v) -->
+<method name='setEnumSh' public='true'>
+<parameter name='v' module='schedule' class='javax.baja.schedule.BEnumSchedule'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;enumSh&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#enumSh</tag>
+</method>
+
+<!-- public void emergencyOverride(baja:javax.baja.sys.BString arg) -->
+<method name='emergencyOverride' public='true'>
+<parameter name='arg' module='baja' class='javax.baja.sys.BString'/>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;emergencyOverride&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#emergencyOverride</tag>
+</method>
+
+<!-- public void emergencyAuto() -->
+<method name='emergencyAuto' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;emergencyAuto&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#emergencyAuto</tag>
+</method>
+
+<!-- public void override(control:javax.baja.control.util.BStringOverride arg) -->
+<method name='override' public='true'>
+<parameter name='arg' module='control' class='javax.baja.control.util.BStringOverride'/>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;override&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#override</tag>
+</method>
+
+<!-- public void auto() -->
+<method name='auto' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;auto&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#auto</tag>
+</method>
+
+<!-- public void set(baja:javax.baja.sys.BString arg) -->
+<method name='set' public='true'>
+<parameter name='arg' module='baja' class='javax.baja.sys.BString'/>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;set&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#set</tag>
+</method>
+
+<!-- public void timerExpired() -->
+<method name='timerExpired' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;timerExpired&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#timerExpired</tag>
+</method>
+
+<!-- public void setAlarm() -->
+<method name='setAlarm' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;setAlarm&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#setAlarm</tag>
+</method>
+
+<!-- public void resetAlarm() -->
+<method name='resetAlarm' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;resetAlarm&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BFcu#resetAlarm</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public void started() throws java.lang.Exception -->
+<method name='started' public='true'>
+<return class='void'/>
+<throws class='java.lang.Exception'/>
+</method>
+
+<!-- public void onExecute() throws java.lang.Exception -->
+<method name='onExecute' public='true'>
+<return class='void'/>
+<throws class='java.lang.Exception'/>
+</method>
+
+<!-- public void doTimerExpired() throws java.lang.Exception -->
+<method name='doTimerExpired' public='true'>
+<return class='void'/>
+<throws class='java.lang.Exception'/>
+</method>
+
+<!-- public void doSetAlarm() throws java.lang.Exception -->
+<method name='doSetAlarm' public='true'>
+<return class='void'/>
+<throws class='java.lang.Exception'/>
+</method>
+
+<!-- public void doResetAlarm() throws java.lang.Exception -->
+<method name='doResetAlarm' public='true'>
+<return class='void'/>
+<throws class='java.lang.Exception'/>
+</method>
+
+<!-- public void update() throws java.lang.Exception -->
+<method name='update' public='true'>
+<return class='void'/>
+<throws class='java.lang.Exception'/>
+</method>
+
+<!-- public void switchHcMode(boolean pid) -->
+<method name='switchHcMode' public='true'>
+<parameter name='pid' class='boolean'/>
+<return class='void'/>
+</method>
+
+<!-- public void switchSpeed() -->
+<method name='switchSpeed' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public int getCurrentSpeed() -->
+<method name='getCurrentSpeed' public='true'>
+<return class='int'/>
+</method>
+
+<!-- public int getSpeed() -->
+<method name='getSpeed' public='true'>
+<return class='int'/>
+</method>
+
+<!-- public void setSpeed(int i) -->
+<method name='setSpeed' public='true'>
+<parameter name='i' class='int'/>
+<return class='void'/>
+</method>
+
+<!-- public void changed(baja:javax.baja.sys.Property p, baja:javax.baja.sys.Context cx) -->
+<method name='changed' public='true'>
+<parameter name='p' module='baja' class='javax.baja.sys.Property'/>
+<parameter name='cx' module='baja' class='javax.baja.sys.Context'/>
+<return class='void'/>
+</method>
+
+<!-- public void updateStates() -->
+<method name='updateStates' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+<!-- public baja:javax.baja.sys.Clock$Ticket ticket -->
+<field name='ticket' public='true'>
+<type module='baja' class='javax.baja.sys.Clock$Ticket'/>
+</field>
+
+<!-- public baja:javax.baja.sys.Clock$Ticket alarm_ticket -->
+<field name='alarm_ticket' public='true'>
+<type module='baja' class='javax.baja.sys.Clock$Ticket'/>
+</field>
+
+</class>
+</bajadoc>

@@ -1,0 +1,10 @@
+<!-- Module Include File -->
+
+<!-- Types -->
+<types>
+    <type name="AirCurtain" class="com.bc.BcAirCurtain.BAirCurtain"/>
+    <type name="AirCurtainState" class="com.bc.BcAirCurtain.BAirCurtainState"/>
+    <type name="AirCurtainSw" class="com.bc.BcAirCurtain.BAirCurtainSw"/>
+    <type name="Pid" class="com.bc.BcAirCurtain.BPid"/>
+    
+</types>

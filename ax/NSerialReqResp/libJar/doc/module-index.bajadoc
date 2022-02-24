@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='22-июн-2021' createdOn='MSI'>
+<module
+  name='NSerialReqResp'
+  bajaVersion='0'
+  vendor='bclimate'
+  vendorVersion='3.8.401'
+>
+<description>Ndriver Request Response framework</description>
+</module>
+</bajadoc>

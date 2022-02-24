@@ -1,0 +1,34 @@
+<!-- Module Include File -->
+
+<!-- Types -->
+<types>
+  <!-- Type Example:
+  <type name="MyClass" class="com.acme.BMyClass"/>
+  -->
+  <type name="Ahu" class="com.bc.CommonLogic.test.BAhu"/>  
+  <type name="ParkingFans" class="com.bc.CommonLogic.test.BParkingFans"/>
+  <type name="PumpUnit" class="com.bc.CommonLogic.rotator.BPumpUnit"/>
+  <type name="PumpRotator" class="com.bc.CommonLogic.rotator.BPumpRotator"/>
+  <type name="IsmaDaliLamp" class="com.bc.CommonLogic.lighting.BIsmaDaliLamp"/>
+  <type name="AddDbMsg" class="com.bc.CommonLogic.db.BAddDbMsg"/>
+  <type name="BlindControl" class="com.bc.CommonLogic.blind.BBlindControl"/>  
+ 
+    <type name="Cmd" class="com.bc.CommonLogic.blind.BCmd"/>
+  <type name="Equipment" class="com.bc.CommonLogic.mau.BEquipment"/>
+
+  <type name="Fcu" class="com.bc.CommonLogic.fcuModule.BFcu"/>
+  <type name="FcuState" class="com.bc.CommonLogic.fcuModule.BFcuState"/>
+  <type name="FcuType" class="com.bc.CommonLogic.fcuModule.BFcuType"/>
+  <type name="Hc" class="com.bc.CommonLogic.fcuModule.BHc"/>
+  <type name="Pid" class="com.bc.CommonLogic.fcuModule.BPid"/>  
+  <type name="SpeedRange" class="com.bc.CommonLogic.fcuModule.BSpeedRange"/> 
+
+
+
+
+  <type name="KnxGira5142Converter" class="com.bc.CommonLogic.fcuModule.BKnxGira5142Converter"/>
+  <type name="Knx2float" class="com.bc.CommonLogic.fcuModule.BKnx2float"/>
+  <type name="Float2Knx" class="com.bc.CommonLogic.fcuModule.BFloat2Knx"/>
+  <type name="DimOneButton" class="com.bc.CommonLogic.lighting.BDimOneButton"/>
+  <type name="CutMessage" class="com.bc.CommonLogic.fcuModule.BCutMessage"/>
+</types>

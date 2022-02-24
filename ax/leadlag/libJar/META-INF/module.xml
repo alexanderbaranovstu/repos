@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module
+  name = "leadlag"
+  bajaVersion = "0"
+  vendor = "bclimate"
+  vendorVersion = "3.8.401"
+  description = "Module for runtime calculation"
+  preferredSymbol = "LL"
+  buildDate = "12-янв-22 11:11 MSK"
+  buildMillis = "1641975110193"
+  buildHost = "null"
+>
+
+<dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="3.8"/>
+  <dependency name="control" vendor="Tridium" vendorVersion="3.8"/>
+</dependencies>
+
+<dirs>
+  <dir name="com/bc/leadlag" install="runtime"/>
+  <dir name="doc" install="doc"/>
+</dirs>
+
+<types>
+  <type name="SingleUnit" class="com.bc.leadlag.BSingleUnit"/>
+  <type name="Controller" class="com.bc.leadlag.BController"/>
+  <type name="ContactorState" class="com.bc.leadlag.BContactorState"/>
+  <type name="UnitState" class="com.bc.leadlag.BUnitState"/>
+</types>
+
+</module>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="id1348-rt" bajaVersion="0" vendor="BC" vendorVersion="1.01" description="Switch 1-2-3 Speed" preferredSymbol="id" nre="true" autoload="true" installable="true" buildMillis="1641380352446" buildHost="LAPTOP-NOADV716" moduleName="id1348" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.7"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.7"/>
+  <dependency name="kitControl-rt" vendor="Tridium" vendorVersion="4.7"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type name="StateMachine" class="com.bc.id1348.BStateMachine"/>
+  <type name="UnitState" class="com.bc.id1348.BUnitState"/>
+  <type name="SpeedSw" class="com.bc.id1348.BSpeedSw"/>
+  <type name="Contactor" class="com.bc.id1348.BContactor"/>
+  <type name="ContactorState" class="com.bc.id1348.BContactorState"/>
+ </types>
+</module>

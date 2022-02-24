@@ -1,0 +1,18 @@
+<!-- Types -->
+<types>
+
+<!-- com.bclimate.NSerialReqResp -->
+<type name="NSerialReqRespNetwork" class="com.bclimate.NSerialReqResp.BNSerialReqRespNetwork" />
+<type name="NSerialReqRespDevice" class="com.bclimate.NSerialReqResp.BNSerialReqRespDevice" />
+<type name="NSerialReqRespDeviceFolder" class="com.bclimate.NSerialReqResp.BNSerialReqRespDeviceFolder" />
+
+<!-- com.bclimate.NSerialReqResp.comm -->
+<type name="NSerialReqRespSerialCommConfig" class="com.bclimate.NSerialReqResp.comm.BNSerialReqRespSerialCommConfig" />
+
+
+<!-- com.bclimate.NSerialReqResp.point -->
+<type name="NSerialReqRespPointDeviceExt" class="com.bclimate.NSerialReqResp.point.BNSerialReqRespPointDeviceExt" />
+<type name="NSerialReqRespPointFolder" class="com.bclimate.NSerialReqResp.point.BNSerialReqRespPointFolder" />
+<type name="NSerialReqRespProxyExt" class="com.bclimate.NSerialReqResp.point.BNSerialReqRespProxyExt" />
+
+</types>

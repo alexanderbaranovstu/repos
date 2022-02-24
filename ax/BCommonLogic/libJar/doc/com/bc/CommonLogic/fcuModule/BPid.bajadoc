@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.fcuModule.BPid'
+  name='BPid'
+  packageName='com.bc.CommonLogic.fcuModule'
+>
+<description>The BLoopPoint class implements a simple PID control loop.
+</description>
+<tag name='author'>Dan Giorgis</tag>
+<tag name='creation'>25 May 01</tag>
+<tag name='version'>$Revision: 23$ $Date: 5/11/2004 11:30:46 AM$</tag>
+<tag name='since'>Baja 1.0</tag>
+<extends module='control' class='javax.baja.control.BNumericPoint'/>
+
+<!-- property loopEnable -->
+<property name='loopEnable' flags=''>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;loopEnable&lt;/code&gt; property.
+ Loop Enable</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getLoopEnable</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setLoopEnable</tag>
+</property>
+
+<!-- property inputFacets -->
+<property name='inputFacets' flags=''>
+<type module='baja' class='javax.baja.sys.BFacets'/>
+<description>Slot for the &lt;code&gt;inputFacets&lt;/code&gt; property.
+ These facets are applied against the controlledVariable
+ and setpoint properties.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getInputFacets</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setInputFacets</tag>
+</property>
+
+<!-- property controlledVariable -->
+<property name='controlledVariable' flags=''>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;controlledVariable&lt;/code&gt; property.
+ Controlled Variable</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getControlledVariable</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setControlledVariable</tag>
+</property>
+
+<!-- property setpoint -->
+<property name='setpoint' flags=''>
+<type module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Slot for the &lt;code&gt;setpoint&lt;/code&gt; property.
+ The target for the process variable, meaning the value
+ at the setpoint input.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getSetpoint</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setSetpoint</tag>
+</property>
+
+<!-- property executeTime -->
+<property name='executeTime' flags=''>
+<type module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Slot for the &lt;code&gt;executeTime&lt;/code&gt; property.
+ execution time</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getExecuteTime</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setExecuteTime</tag>
+</property>
+
+<!-- property actualTime -->
+<property name='actualTime' flags='rto'>
+<type class='int'/>
+<description>Slot for the &lt;code&gt;actualTime&lt;/code&gt; property.
+ actual time</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getActualTime</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setActualTime</tag>
+</property>
+
+<!-- property loopAction -->
+<property name='loopAction' flags=''>
+<type module='kitControl' class='com.tridium.kitControl.enums.BLoopAction'/>
+<description>Slot for the &lt;code&gt;loopAction&lt;/code&gt; property.
+ Selection of loop action as either direct or reverse
+ acting.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getLoopAction</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setLoopAction</tag>
+</property>
+
+<!-- property disableAction -->
+<property name='disableAction' flags=''>
+<type module='kitControl' class='com.tridium.kitControl.enums.BDisableAction'/>
+<description>Slot for the &lt;code&gt;disableAction&lt;/code&gt; property.
+ Selection of disable action selects output action when loop is disabled.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getDisableAction</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setDisableAction</tag>
+</property>
+
+<!-- property tuningFacets -->
+<property name='tuningFacets' flags=''>
+<type module='baja' class='javax.baja.sys.BFacets'/>
+<description>Slot for the &lt;code&gt;tuningFacets&lt;/code&gt; property.
+ These facets are applied against the proportional,
+ integral, and derivative constant properties.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getTuningFacets</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setTuningFacets</tag>
+</property>
+
+<!-- property proportionalConstant -->
+<property name='proportionalConstant' flags=''>
+<type class='double'/>
+<description>Slot for the &lt;code&gt;proportionalConstant&lt;/code&gt; property.
+ Defines the value of the proportional gain parameter
+ used by the loop algorithm. Used to set the overall
+ gain for the loop. A starting point for this value
+ is found by: output range / throttling range.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getProportionalConstant</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setProportionalConstant</tag>
+</property>
+
+<!-- property integralConstant -->
+<property name='integralConstant' flags=''>
+<type class='double'/>
+<description>Slot for the &lt;code&gt;integralConstant&lt;/code&gt; property.
+ Defines the integral gain parameter, in repeats per
+ minute, used by the loop algorithm. Also called reset
+ rate. Acts on the magnitude of the setpoint error.
+ resets per minute FIXX set units</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getIntegralConstant</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setIntegralConstant</tag>
+</property>
+
+<!-- property derivativeConstant -->
+<property name='derivativeConstant' flags=''>
+<type class='double'/>
+<description>Slot for the &lt;code&gt;derivativeConstant&lt;/code&gt; property.
+ Defines the derivative gain parameter, in seconds,
+ used by the loop algorithm. Acts on the rate of change
+ of the setpoint error. FIXX set units</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getDerivativeConstant</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setDerivativeConstant</tag>
+</property>
+
+<!-- property bias -->
+<property name='bias' flags=''>
+<type class='double'/>
+<description>Slot for the &lt;code&gt;bias&lt;/code&gt; property.
+ Defines the amount of output bias added to the output
+ to correct offset error. In other words, the output
+ at setpoint. Expressed in the same units of the outputUnits.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getBias</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setBias</tag>
+</property>
+
+<!-- property maximumOutput -->
+<property name='maximumOutput' flags=''>
+<type class='double'/>
+<description>Slot for the &lt;code&gt;maximumOutput&lt;/code&gt; property.
+ Defines the maximum output value that the loop algorithm
+ can produce.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getMaximumOutput</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setMaximumOutput</tag>
+</property>
+
+<!-- property minimumOutput -->
+<property name='minimumOutput' flags=''>
+<type class='double'/>
+<description>Slot for the &lt;code&gt;minimumOutput&lt;/code&gt; property.
+ Defines the minimum output value that the loop algorithm
+ can produce.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getMinimumOutput</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setMinimumOutput</tag>
+</property>
+
+<!-- property rampTime -->
+<property name='rampTime' flags=''>
+<type module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Slot for the &lt;code&gt;rampTime&lt;/code&gt; property.
+ ramp time is the max time that the output will be allowed to go from minimumOutput to maximumOutput when the loop is enabled.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#getRampTime</tag>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setRampTime</tag>
+</property>
+
+<!-- action resetIntegral -->
+<action name='resetIntegral' flags=''>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;resetIntegral&lt;/code&gt; action.
+ Any received trigger pulse clears the current integral
+ component of the loop's output calculation. If needed,
+ this input can be linked to another object to provide
+ a quick purge of the integral effect. Examples include
+ the changeOfStateTrigger output of a related BinaryOutput
+ object (say for a supply fan), or a perhaps a Command
+ object. Typically, the later would provide more of
+ a "debug" utility, and should not be necessary if the Loop object's configuration properties are correctly defined. Also, note that whenever the Loop's input "statusInhibit" is linked, an integral reset occurs automatically each time a false-to-true transition is received.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#resetIntegral()</tag>
+</action>
+
+<!-- action timerExpired -->
+<action name='timerExpired' flags='h'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;timerExpired&lt;/code&gt; action.
+ Internal action that will fire when the execute timer
+ expires.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#timerExpired()</tag>
+</action>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getLoopEnable() -->
+<method name='getLoopEnable' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;loopEnable&lt;/code&gt; property.
+ Loop Enable</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#loopEnable</tag>
+</method>
+
+<!-- public void setLoopEnable(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setLoopEnable' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;loopEnable&lt;/code&gt; property.
+ Loop Enable</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#loopEnable</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.BFacets getInputFacets() -->
+<method name='getInputFacets' public='true'>
+<return module='baja' class='javax.baja.sys.BFacets'/>
+<description>Get the &lt;code&gt;inputFacets&lt;/code&gt; property.
+ These facets are applied against the controlledVariable
+ and setpoint properties.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#inputFacets</tag>
+</method>
+
+<!-- public void setInputFacets(baja:javax.baja.sys.BFacets v) -->
+<method name='setInputFacets' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BFacets'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;inputFacets&lt;/code&gt; property.
+ These facets are applied against the controlledVariable
+ and setpoint properties.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#inputFacets</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getControlledVariable() -->
+<method name='getControlledVariable' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;controlledVariable&lt;/code&gt; property.
+ Controlled Variable</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#controlledVariable</tag>
+</method>
+
+<!-- public void setControlledVariable(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setControlledVariable' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;controlledVariable&lt;/code&gt; property.
+ Controlled Variable</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#controlledVariable</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusNumeric getSetpoint() -->
+<method name='getSetpoint' public='true'>
+<return module='baja' class='javax.baja.status.BStatusNumeric'/>
+<description>Get the &lt;code&gt;setpoint&lt;/code&gt; property.
+ The target for the process variable, meaning the value
+ at the setpoint input.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setpoint</tag>
+</method>
+
+<!-- public void setSetpoint(baja:javax.baja.status.BStatusNumeric v) -->
+<method name='setSetpoint' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusNumeric'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;setpoint&lt;/code&gt; property.
+ The target for the process variable, meaning the value
+ at the setpoint input.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#setpoint</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.BRelTime getExecuteTime() -->
+<method name='getExecuteTime' public='true'>
+<return module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Get the &lt;code&gt;executeTime&lt;/code&gt; property.
+ execution time</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#executeTime</tag>
+</method>
+
+<!-- public void setExecuteTime(baja:javax.baja.sys.BRelTime v) -->
+<method name='setExecuteTime' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BRelTime'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;executeTime&lt;/code&gt; property.
+ execution time</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#executeTime</tag>
+</method>
+
+<!-- public int getActualTime() -->
+<method name='getActualTime' public='true'>
+<return class='int'/>
+<description>Get the &lt;code&gt;actualTime&lt;/code&gt; property.
+ actual time</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#actualTime</tag>
+</method>
+
+<!-- public void setActualTime(int v) -->
+<method name='setActualTime' public='true'>
+<parameter name='v' class='int'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;actualTime&lt;/code&gt; property.
+ actual time</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#actualTime</tag>
+</method>
+
+<!-- public kitControl:com.tridium.kitControl.enums.BLoopAction getLoopAction() -->
+<method name='getLoopAction' public='true'>
+<return module='kitControl' class='com.tridium.kitControl.enums.BLoopAction'/>
+<description>Get the &lt;code&gt;loopAction&lt;/code&gt; property.
+ Selection of loop action as either direct or reverse
+ acting.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#loopAction</tag>
+</method>
+
+<!-- public void setLoopAction(kitControl:com.tridium.kitControl.enums.BLoopAction v) -->
+<method name='setLoopAction' public='true'>
+<parameter name='v' module='kitControl' class='com.tridium.kitControl.enums.BLoopAction'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;loopAction&lt;/code&gt; property.
+ Selection of loop action as either direct or reverse
+ acting.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#loopAction</tag>
+</method>
+
+<!-- public kitControl:com.tridium.kitControl.enums.BDisableAction getDisableAction() -->
+<method name='getDisableAction' public='true'>
+<return module='kitControl' class='com.tridium.kitControl.enums.BDisableAction'/>
+<description>Get the &lt;code&gt;disableAction&lt;/code&gt; property.
+ Selection of disable action selects output action when loop is disabled.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#disableAction</tag>
+</method>
+
+<!-- public void setDisableAction(kitControl:com.tridium.kitControl.enums.BDisableAction v) -->
+<method name='setDisableAction' public='true'>
+<parameter name='v' module='kitControl' class='com.tridium.kitControl.enums.BDisableAction'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;disableAction&lt;/code&gt; property.
+ Selection of disable action selects output action when loop is disabled.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#disableAction</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.BFacets getTuningFacets() -->
+<method name='getTuningFacets' public='true'>
+<return module='baja' class='javax.baja.sys.BFacets'/>
+<description>Get the &lt;code&gt;tuningFacets&lt;/code&gt; property.
+ These facets are applied against the proportional,
+ integral, and derivative constant properties.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#tuningFacets</tag>
+</method>
+
+<!-- public void setTuningFacets(baja:javax.baja.sys.BFacets v) -->
+<method name='setTuningFacets' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BFacets'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;tuningFacets&lt;/code&gt; property.
+ These facets are applied against the proportional,
+ integral, and derivative constant properties.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#tuningFacets</tag>
+</method>
+
+<!-- public double getProportionalConstant() -->
+<method name='getProportionalConstant' public='true'>
+<return class='double'/>
+<description>Get the &lt;code&gt;proportionalConstant&lt;/code&gt; property.
+ Defines the value of the proportional gain parameter
+ used by the loop algorithm. Used to set the overall
+ gain for the loop. A starting point for this value
+ is found by: output range / throttling range.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#proportionalConstant</tag>
+</method>
+
+<!-- public void setProportionalConstant(double v) -->
+<method name='setProportionalConstant' public='true'>
+<parameter name='v' class='double'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;proportionalConstant&lt;/code&gt; property.
+ Defines the value of the proportional gain parameter
+ used by the loop algorithm. Used to set the overall
+ gain for the loop. A starting point for this value
+ is found by: output range / throttling range.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#proportionalConstant</tag>
+</method>
+
+<!-- public double getIntegralConstant() -->
+<method name='getIntegralConstant' public='true'>
+<return class='double'/>
+<description>Get the &lt;code&gt;integralConstant&lt;/code&gt; property.
+ Defines the integral gain parameter, in repeats per
+ minute, used by the loop algorithm. Also called reset
+ rate. Acts on the magnitude of the setpoint error.
+ resets per minute FIXX set units</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#integralConstant</tag>
+</method>
+
+<!-- public void setIntegralConstant(double v) -->
+<method name='setIntegralConstant' public='true'>
+<parameter name='v' class='double'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;integralConstant&lt;/code&gt; property.
+ Defines the integral gain parameter, in repeats per
+ minute, used by the loop algorithm. Also called reset
+ rate. Acts on the magnitude of the setpoint error.
+ resets per minute FIXX set units</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#integralConstant</tag>
+</method>
+
+<!-- public double getDerivativeConstant() -->
+<method name='getDerivativeConstant' public='true'>
+<return class='double'/>
+<description>Get the &lt;code&gt;derivativeConstant&lt;/code&gt; property.
+ Defines the derivative gain parameter, in seconds,
+ used by the loop algorithm. Acts on the rate of change
+ of the setpoint error. FIXX set units</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#derivativeConstant</tag>
+</method>
+
+<!-- public void setDerivativeConstant(double v) -->
+<method name='setDerivativeConstant' public='true'>
+<parameter name='v' class='double'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;derivativeConstant&lt;/code&gt; property.
+ Defines the derivative gain parameter, in seconds,
+ used by the loop algorithm. Acts on the rate of change
+ of the setpoint error. FIXX set units</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#derivativeConstant</tag>
+</method>
+
+<!-- public double getBias() -->
+<method name='getBias' public='true'>
+<return class='double'/>
+<description>Get the &lt;code&gt;bias&lt;/code&gt; property.
+ Defines the amount of output bias added to the output
+ to correct offset error. In other words, the output
+ at setpoint. Expressed in the same units of the outputUnits.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#bias</tag>
+</method>
+
+<!-- public void setBias(double v) -->
+<method name='setBias' public='true'>
+<parameter name='v' class='double'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;bias&lt;/code&gt; property.
+ Defines the amount of output bias added to the output
+ to correct offset error. In other words, the output
+ at setpoint. Expressed in the same units of the outputUnits.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#bias</tag>
+</method>
+
+<!-- public double getMaximumOutput() -->
+<method name='getMaximumOutput' public='true'>
+<return class='double'/>
+<description>Get the &lt;code&gt;maximumOutput&lt;/code&gt; property.
+ Defines the maximum output value that the loop algorithm
+ can produce.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#maximumOutput</tag>
+</method>
+
+<!-- public void setMaximumOutput(double v) -->
+<method name='setMaximumOutput' public='true'>
+<parameter name='v' class='double'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;maximumOutput&lt;/code&gt; property.
+ Defines the maximum output value that the loop algorithm
+ can produce.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#maximumOutput</tag>
+</method>
+
+<!-- public double getMinimumOutput() -->
+<method name='getMinimumOutput' public='true'>
+<return class='double'/>
+<description>Get the &lt;code&gt;minimumOutput&lt;/code&gt; property.
+ Defines the minimum output value that the loop algorithm
+ can produce.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#minimumOutput</tag>
+</method>
+
+<!-- public void setMinimumOutput(double v) -->
+<method name='setMinimumOutput' public='true'>
+<parameter name='v' class='double'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;minimumOutput&lt;/code&gt; property.
+ Defines the minimum output value that the loop algorithm
+ can produce.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#minimumOutput</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.BRelTime getRampTime() -->
+<method name='getRampTime' public='true'>
+<return module='baja' class='javax.baja.sys.BRelTime'/>
+<description>Get the &lt;code&gt;rampTime&lt;/code&gt; property.
+ ramp time is the max time that the output will be allowed to go from minimumOutput to maximumOutput when the loop is enabled.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#rampTime</tag>
+</method>
+
+<!-- public void setRampTime(baja:javax.baja.sys.BRelTime v) -->
+<method name='setRampTime' public='true'>
+<parameter name='v' module='baja' class='javax.baja.sys.BRelTime'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;rampTime&lt;/code&gt; property.
+ ramp time is the max time that the output will be allowed to go from minimumOutput to maximumOutput when the loop is enabled.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#rampTime</tag>
+</method>
+
+<!-- public void resetIntegral() -->
+<method name='resetIntegral' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;resetIntegral&lt;/code&gt; action.
+ Any received trigger pulse clears the current integral
+ component of the loop's output calculation. If needed,
+ this input can be linked to another object to provide
+ a quick purge of the integral effect. Examples include
+ the changeOfStateTrigger output of a related BinaryOutput
+ object (say for a supply fan), or a perhaps a Command
+ object. Typically, the later would provide more of
+ a "debug" utility, and should not be necessary if the Loop object's configuration properties are correctly defined. Also, note that whenever the Loop's input "statusInhibit" is linked, an integral reset occurs automatically each time a false-to-true transition is received.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#resetIntegral</tag>
+</method>
+
+<!-- public void timerExpired() -->
+<method name='timerExpired' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;timerExpired&lt;/code&gt; action.
+ Internal action that will fire when the execute timer
+ expires.</description>
+<tag name='see'>com.bc.CommonLogic.fcuModule.BPid#timerExpired</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public boolean isIntegral() -->
+<method name='isIntegral' public='true'>
+<return class='boolean'/>
+<description>Is the Integral Term set</description>
+</method>
+
+<!-- public baja:javax.baja.sys.BFacets getSlotFacets(baja:javax.baja.sys.Slot slot) -->
+<method name='getSlotFacets' public='true'>
+<parameter name='slot' module='baja' class='javax.baja.sys.Slot'/>
+<return module='baja' class='javax.baja.sys.BFacets'/>
+</method>
+
+<!-- public void doResetIntegral() -->
+<method name='doResetIntegral' public='true'>
+<return class='void'/>
+<description>Handle triggers.</description>
+</method>
+
+<!-- public void doTimerExpired() -->
+<method name='doTimerExpired' public='true'>
+<return class='void'/>
+<description>Callback for timer expired.</description>
+</method>
+
+<!-- public void started() throws java.lang.Exception -->
+<method name='started' public='true'>
+<return class='void'/>
+<throws class='java.lang.Exception'/>
+</method>
+
+<!-- public void onExecute(baja:javax.baja.status.BStatusValue out, baja:javax.baja.sys.Context cx) -->
+<method name='onExecute' public='true'>
+<parameter name='out' module='baja' class='javax.baja.status.BStatusValue'/>
+<parameter name='cx' module='baja' class='javax.baja.sys.Context'/>
+<return class='void'/>
+</method>
+
+<!-- public void calculatePoint() -->
+<method name='calculatePoint' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void changed(baja:javax.baja.sys.Property p, baja:javax.baja.sys.Context cx) -->
+<method name='changed' public='true'>
+<parameter name='p' module='baja' class='javax.baja.sys.Property'/>
+<parameter name='cx' module='baja' class='javax.baja.sys.Context'/>
+<return class='void'/>
+<description>Property changed.</description>
+</method>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+<!-- public static long LOOP_MAX_EXECUTE_TIME -->
+<field name='LOOP_MAX_EXECUTE_TIME' public='true' static='true'>
+<type class='long'/>
+</field>
+
+<!-- public static long LOOP_MIN_EXECUTE_TIME -->
+<field name='LOOP_MIN_EXECUTE_TIME' public='true' static='true'>
+<type class='long'/>
+</field>
+
+<!-- public static long LOOP_DEFAULT_EXECUTE_TIME -->
+<field name='LOOP_DEFAULT_EXECUTE_TIME' public='true' static='true'>
+<type class='long'/>
+</field>
+
+</class>
+</bajadoc>

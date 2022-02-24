@@ -1,0 +1,74 @@
+package com.bc.fcuModule;  
+
+
+import javax.baja.sys.*;
+
+/**
+ * BOrientation defines a widget's orientation as
+ * either horizontal or vertical.
+ *
+ * @author    Baranov Alex
+ * @creation  1 March 21
+ * @version   $Revision: 2$ $Date: 3/23/05 11:29:07 AM EST$
+ * @since     Baja 1.0
+ */
+public final class BScheduleSelector
+  extends BFrozenEnum
+{
+  /*-
+  
+  enum BScheduleSelector
+  {
+    range
+    {
+      internal,
+      external
+    }
+  }
+  
+  -*/
+/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+/*@ $com.bc.fcuModule.BScheduleSelector(2617263608)1.0$ @*/
+/* Generated Wed Mar 17 12:58:21 GMT+03:00 2021 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+  
+  /** Ordinal value for internal. */
+  public static final int INTERNAL = 0;
+  /** Ordinal value for external. */
+  public static final int EXTERNAL = 1;
+  
+  /** BScheduleSelector constant for internal. */
+  public static final BScheduleSelector internal = new BScheduleSelector(INTERNAL);
+  /** BScheduleSelector constant for external. */
+  public static final BScheduleSelector external = new BScheduleSelector(EXTERNAL);
+  
+  /** Factory method with ordinal. */
+  public static BScheduleSelector make(int ordinal)
+  {
+    return (BScheduleSelector)internal.getRange().get(ordinal, false);
+  }
+  
+  /** Factory method with tag. */
+  public static BScheduleSelector make(String tag)
+  {
+    return (BScheduleSelector)internal.getRange().get(tag);
+  }
+  
+  /** Private constructor. */
+  private BScheduleSelector(int ordinal)
+  {
+    super(ordinal);
+  }
+  
+  public static final BScheduleSelector DEFAULT = internal;
+
+////////////////////////////////////////////////////////////////
+// Type
+////////////////////////////////////////////////////////////////
+  
+  @Override
+  public Type getType() { return TYPE; }
+  public static final Type TYPE = Sys.loadType(BScheduleSelector.class);
+
+/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
+
+}

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.test.BParkingFans'
+  name='BParkingFans'
+  packageName='com.bc.CommonLogic.test'
+>
+<extends module='BCommonLogic' class='com.bc.CommonLogic.test.BAhu'/>
+
+<!-- action ControlAction2 -->
+<action name='ControlAction2' flags='o'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;ControlAction2&lt;/code&gt; action.
+ Set the fallback property value.</description>
+<tag name='see'>com.bc.CommonLogic.test.BParkingFans#ControlAction2()</tag>
+</action>
+
+<!-- public void ControlAction2() -->
+<method name='ControlAction2' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;ControlAction2&lt;/code&gt; action.
+ Set the fallback property value.</description>
+<tag name='see'>com.bc.CommonLogic.test.BParkingFans#ControlAction2</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public void doControlAction2() -->
+<method name='doControlAction2' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+</class>
+</bajadoc>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<module
+  name='BCommonLogic'
+  bajaVersion='0'
+  vendor='bclimate'
+  vendorVersion='3.8.401'
+>
+<description>Basic Common Logic</description>
+<package name='com.bc.CommonLogic.test'/>
+<package name='com.bc.CommonLogic.rotator'/>
+<package name='com.bc.CommonLogic.lighting'/>
+<package name='com.bc.CommonLogic.db'/>
+<package name='com.bc.CommonLogic.mau'/>
+<package name='com.bc.CommonLogic.blind'/>
+<package name='com.bc.CommonLogic.fcuModule'/>
+<type qualifiedName='com.bc.CommonLogic.test.BAhu'/>
+<type qualifiedName='com.bc.CommonLogic.test.BParkingFans'/>
+<type qualifiedName='com.bc.CommonLogic.rotator.BPumpRotator'/>
+<type qualifiedName='com.bc.CommonLogic.rotator.BPumpUnit'/>
+<type qualifiedName='com.bc.CommonLogic.lighting.BIsmaDaliLamp'/>
+<type qualifiedName='com.bc.CommonLogic.db.BAddDbMsg'/>
+<type qualifiedName='com.bc.CommonLogic.mau.BEquipment'/>
+<type qualifiedName='com.bc.CommonLogic.blind.BBlindControl'/>
+<type qualifiedName='com.bc.CommonLogic.blind.BCmd'>BOrientation defines a widget's orientation as either horizontal or vertical.</type>
+<type qualifiedName='com.bc.CommonLogic.blind.BSlideControl'/>
+<type qualifiedName='com.bc.CommonLogic.fcuModule.BFcu'/>
+<type qualifiedName='com.bc.CommonLogic.fcuModule.BKnxGira5142Converter'/>
+<type qualifiedName='com.bc.CommonLogic.fcuModule.BPid'>The BLoopPoint class implements a simple PID control loop.</type>
+</module>
+</bajadoc>

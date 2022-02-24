@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="BCommonLogic-rt" bajaVersion="0" vendor="bc" vendorVersion="1.01" description="Control Module For Common logic" preferredSymbol="BC" nre="true" autoload="true" installable="true" buildMillis="1640264623296" buildHost="LAPTOP-NOADV716" moduleName="BCommonLogic" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="alarm-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="gx-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="workbench-wb" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="schedule-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="report-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="bajaui-wb" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="kitControl-rt" vendor="Tridium" vendorVersion="4.9"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type name="Ahu" class="com.bc.CommonLogic.test.BAhu"/>
+  <type name="ParkingFans" class="com.bc.CommonLogic.test.BParkingFans"/>
+  <type name="PumpUnit" class="com.bc.CommonLogic.rotator.BPumpUnit"/>
+  <type name="PumpRotator" class="com.bc.CommonLogic.rotator.BPumpRotator"/>
+  <type name="IsmaDaliLamp" class="com.bc.CommonLogic.lighting.BIsmaDaliLamp"/>
+  <type name="AddDbMsg" class="com.bc.CommonLogic.db.BAddDbMsg"/>
+  <type name="BlindControl" class="com.bc.CommonLogic.blind.BBlindControl"/>
+  <type name="Cmd" class="com.bc.CommonLogic.blind.BCmd"/>
+  <type name="Equipment" class="com.bc.CommonLogic.mau.BEquipment"/>
+  <type name="Fcu" class="com.bc.CommonLogic.fcuModule.BFcu"/>
+  <type name="FcuState" class="com.bc.CommonLogic.fcuModule.BFcuState"/>
+  <type name="FcuType" class="com.bc.CommonLogic.fcuModule.BFcuType"/>
+  <type name="Hc" class="com.bc.CommonLogic.fcuModule.BHc"/>
+  <type name="Pid" class="com.bc.CommonLogic.fcuModule.BPid"/>
+  <type name="SpeedRange" class="com.bc.CommonLogic.fcuModule.BSpeedRange"/>
+  <type name="KnxGira5142Converter" class="com.bc.CommonLogic.fcuModule.BKnxGira5142Converter"/>
+  <type name="Knx2float" class="com.bc.CommonLogic.fcuModule.BKnx2float"/>
+  <type name="Float2Knx" class="com.bc.CommonLogic.fcuModule.BFloat2Knx"/>
+  <type name="DimOneButton" class="com.bc.CommonLogic.lighting.BDimOneButton"/>
+  <type name="CutMessage" class="com.bc.CommonLogic.fcuModule.BCutMessage"/>
+ </types>
+</module>

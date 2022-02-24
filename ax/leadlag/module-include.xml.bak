@@ -1,0 +1,9 @@
+<!-- Module Include File -->
+
+<!-- Types -->
+<types>
+
+  <type name="SingleUnit" class="com.bc.leadlag.BSingleUnit"/>
+  <type name="Controller" class="com.bc.leadlag.BController"/>
+  <type name="ContactorState" class="com.bc.leadlag.BContactorState"/>
+</types>

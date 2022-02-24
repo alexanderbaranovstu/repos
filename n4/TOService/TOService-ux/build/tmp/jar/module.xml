@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="TOService-ux" bajaVersion="0" vendor="bc" vendorVersion="1.0" description="Units as service entity, service cards" preferredSymbol="TS" nre="true" autoload="true" installable="true" buildMillis="1635304848672" buildHost="LAPTOP-NOADV716" moduleName="TOService" runtimeProfile="ux">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="alarm-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="gx-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="workbench-wb" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="report-rt" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="bajaui-wb" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="TOService-rt" vendor="bc" vendorVersion="1.12"/>
+ </dependencies>
+ <dirs/>
+ <types/>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

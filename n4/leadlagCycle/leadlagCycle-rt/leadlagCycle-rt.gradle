@@ -1,0 +1,30 @@
+/* Module Build File */
+
+description     = "Module for pump control"
+ext {
+  
+}
+niagaraModule {
+  moduleName = "leadlagCycle"
+  preferredSymbol = "PC"
+  runtimeProfile = "rt"
+  version = "1.01"
+  certAlias = "abaranov"   
+}
+
+dependencies {
+  compile "Tridium:nre:4.7"
+  compile "Tridium:baja:4.7"
+
+  compile "Tridium:kitControl-rt:4.7"
+
+  
+
+  compile "Tridium:kitControl-rt:4.7" 
+  compile "Tridium:control-rt:4.7"  
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

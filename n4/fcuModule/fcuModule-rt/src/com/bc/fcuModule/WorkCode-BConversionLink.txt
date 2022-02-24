@@ -1,0 +1,148 @@
+**********************************VARIANT1 Current ************************************************************
+
+
+    BComponent targetComponent = (BComponent)(getComponent());  
+    BComponent sourceComponent = (BComponent)(getComponent().getParent().asComponent());
+    
+    BLink link =  targetComponent.makeLink(sourceComponent, sourceComponent.getSlot("out"), targetComponent.getSlot("sNum"), null);
+    targetComponent.add("lnk",link); 
+    //((BLink) getProgram().getParent().get('Link')).activate();
+
+**********************************VARIANT2 not for using ************************************************************
+
+//  Метод для создания связи    рабочий но я его переделал на более продвинутый на основании BConvertionLink
+public void prg(String fromBOrd, String fromSlot, String targetBOrd, String targetSlot) {
+   BComponent source = BOrd.make(fromBOrd).get().asComponent();
+   BComponent target = BOrd.make(targetBOrd).get().asComponent();
+   
+   BLink newLinkis = new BLink(source.getHandleOrd(),fromSlot,targetSlot,true);
+   try{target.add("LinkTo"+targetSlot,newLinkis);}
+   catch(Exception ie){System.out.println("Link is Done!!!" + ie);}
+   
+
+}
+
+I had been working on something similar. I got better results with makeLink.
+ 
+
+  // targetComponent is derived from targetOrd property of this program object.
+ 
+
+  BComponent targetComponent = (BComponent)((BObject)getTargetOrd().get(getProgram()));  
+ 
+
+  // sourceComponent is derived from sourceOrd property of this program object.
+ 
+
+  BComponent sourceComponent = (BComponent)((BObject)getSourceOrd().get(getProgram()));
+ 
+
+  
+ 
+
+  // Create link to be added to the target node
+ 
+
+  BLink link =  targetComponent.makeLink(sourceComponent, sourceComponent.getSlot(getSourceSlot()), targetComponent.getSlot(getTargetSlot()), null);
+ 
+
+  
+ 
+
+  targetComponent.add('Link?',link);     // apply link to target node
+ 
+
+  
+ 
+
+  ((BLink) getProgram().getParent().get('Link')).activate();       // activate link so it starts working now.
+
+
+public void doInitSettings() throws Exception
+{
+
+    // Что нибудь тут может лежать
+   //prg( getNavOrd().encodeToString() + "/enumSh" , "out", getNavOrd().encodeToString(),"operation");
+   
+   // BComponent tst = this.asComponent();
+  //  BLink link = new BLink(getEnumSh().getHandleOrd(), "out", "operation", true);
+  //  tst.add("FcuStateLink", link);
+  //  System.out.println(  "Set Slot" ); //рабочий код
+							BOrd		sourceOrd		= getNavOrd() ;
+							BOrd		targetOrd		= getNavOrd() ;
+  
+								BComponent	sourceComp	= (BComponent)sourceOrd.relativizeToHost().get();//new BComponent();//(BComponent)sourceOrd.relativizeToHost().get();
+								BComponent	targetComp	= (BComponent)targetOrd.relativizeToHost().get(); //new BComponent(); //(BComponent)targetOrd.relativizeToHost().get(); 
+							//String		strSourceOrd	= "1";
+							String		strSourceSlot	= "T3in";
+							//String		strTargetOrd	= "3";
+							String		strTargetSlot	= "Speed1";
+								  Slot 	sourceSlot 	= sourceComp.getSlot(strSourceSlot);
+									Slot 	targetSlot 	= targetComp.getSlot(strTargetSlot);
+									Type	sourceType 	= determineSlotType(sourceSlot);
+									Type	targetType 	= determineSlotType(targetSlot);							
+              BConversionLink cLink = new BConversionLink(sourceComp.getHandleOrd(),strSourceSlot,strTargetSlot,true,findConverter(sourceType,targetType) );
+              targetComp.add(null, cLink); 
+
+
+} 
+		private BConverter findConverter(Type typeFrom, Type typeTo)
+		{
+			BConverter converter = null;
+			try
+			{
+				Registry registry	= Sys.getRegistry();
+				TypeInfo[] adapters	= registry.getAdapters(typeFrom.getTypeInfo(), typeTo.getTypeInfo());
+				
+				for (int i = adapters.length - 1; i >= 0; i--)
+				{
+					try
+					{
+						// if 'outRunning' somehow got set to false then don't process any more records...
+						//if(getOutRunning()==false) {break;}
+						
+						if ( registry.isAgent( adapters[i], BConversionLink.TYPE.getTypeInfo() ) )
+						{
+							converter = (BConverter) adapters[i].getInstance();
+							return converter;
+						}
+					}
+					catch (Exception e){}
+				}
+			}
+			catch (Exception e){}
+			
+			return converter;
+		}
+		private Type determineSlotType(Slot slot)
+		{
+			Type type = null;
+			
+			try
+			{
+				boolean slotIsActionOrTopic = slot.isAction() || slot.isTopic();
+				
+				if( slotIsActionOrTopic)
+				{
+					try
+					{
+						if(slot.isAction())		{ type = slot.asAction().getParameterType();	}
+						else if(slot.isTopic())	{ type = slot.asTopic().getEventType();		}
+					}
+					catch(Exception e)
+					{
+						//errorHandler( Level.FINE, "ERROR, coult not determine slot type in method determineSlotType().", e );
+					}
+				}
+				else
+				{
+					type = slot.asProperty().getType();
+				}
+			}
+			catch(Exception e)
+			{
+				//errorHandler( Level.FINE, "ERROR, coult not determine slot type in method determineSlotType().", e );
+			}
+			
+			return type;
+		}		

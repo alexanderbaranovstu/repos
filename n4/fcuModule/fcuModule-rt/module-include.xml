@@ -1,0 +1,18 @@
+<!-- Module Include File -->
+
+<!-- Types -->
+<types>
+
+  <type name="Fcu" class="com.bc.fcuModule.BFcu"/>
+  <type name="FcuState" class="com.bc.fcuModule.BFcuState"/>
+  <type name="Hc" class="com.bc.fcuModule.BHc"/>
+  <type name="SpeedRange" class="com.bc.fcuModule.BSpeedRange"/>  
+  <type name="Pid" class="com.bc.fcuModule.BPid"/>
+  <type name="FcuType" class="com.bc.fcuModule.BFcuType"/>
+  <type name="ControlError" class="com.bc.fcuModule.BControlError"/>
+  <type name="Contactor" class="com.bc.fcuModule.BContactor"/>
+  <type name="ContactorState" class="com.bc.fcuModule.BContactorState"/>
+  <type name="SpeedSw" class="com.bc.fcuModule.BSpeedSw"/>
+  <type name="SpeedSwStrParser" class="com.bc.fcuModule.BSpeedSwStrParser"/>  
+  <type name="SpeedSwToStr" class="com.bc.fcuModule.BSpeedSwToStr"/>    
+</types>

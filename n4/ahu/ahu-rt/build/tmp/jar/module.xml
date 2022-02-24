@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="ahu-rt" bajaVersion="0" vendor="BC" vendorVersion="1.05" description="base algorithm for air handling unit" preferredSymbol="ah" nre="true" autoload="true" installable="true" buildMillis="1641380337285" buildHost="LAPTOP-NOADV716" moduleName="ahu" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.7"/>
+  <dependency name="control-rt" vendor="Tridium" vendorVersion="4.7"/>
+  <dependency name="kitControl-rt" vendor="Tridium" vendorVersion="4.7"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type name="AhuStateMachine" class="com.bc.ahu.BAhuStateMachine"/>
+  <type name="AhuState" class="com.bc.ahu.BAhuState"/>
+  <type name="EquipmentFMode" class="com.bc.ahu.BEquipmentFMode"/>
+  <type name="EquipmentFWinter" class="com.bc.ahu.BEquipmentFWinter"/>
+  <type name="Pos" class="com.bc.ahu.BPos"/>
+  <type name="MixCamera" class="com.bc.ahu.BMixCamera"/>
+  <type name="Pid" class="com.bc.ahu.BPid"/>
+  <type name="Cooler" class="com.bc.ahu.BCooler"/>
+  <type name="Heater" class="com.bc.ahu.BHeater"/>
+  <type name="NumericValue" class="com.bc.ahu.BNumericValue"/>
+  <type name="BooleanValue" class="com.bc.ahu.BBooleanValue"/>
+  <type name="EnumValue" class="com.bc.ahu.BEnumValue"/>
+  <type name="StringValue" class="com.bc.ahu.BStringValue"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

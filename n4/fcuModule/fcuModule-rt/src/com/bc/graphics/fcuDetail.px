@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Niagara Presentation XML -->
+<px version="1.0" media="workbench:WbPxMedia">
+<import>
+  <module name="baja"/>
+  <module name="bajaui"/>
+  <module name="converters"/>
+  <module name="gx"/>
+  <module name="kitPx"/>
+  <module name="schedule"/>
+  <module name="wbutil"/>
+  <module name="workbench"/>
+</import>
+<content>
+<ScrollPane>
+
+  <CanvasPane name="content" viewSize="1200.0,800.0">
+
+    <BoundLabel layout="190.0,150.0,260.0,120.0" image="module://fcuModule/com/bc/graphics/img_duct2.png"/>
+
+    <BoundLabel layout="455.0,240.0,99.0,146.0" image="module://fcuModule/com/bc/graphics/img_duct4.png"/>
+
+    <BoundLabel layout="435.0,160.0,119.0,120.0" image="module://fcuModule/com/bc/graphics/img_duct3.png"/>
+
+    <BoundLabel layout="50.0,120.0,70.0,20.0">
+      <BoundLabelBinding ord="slot:../Pv" statusEffect="color">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="485.0,390.0,30.00000000000003,20.0" image="module://icons/x16/arrowDown.png"/>
+
+    <Label layout="40.0,200.0,30.00000000000003,20.0" image="module://icons/x16/arrowRight.png"/>
+
+    <BorderPane layout="110.0,310.0,250.0,410.0" fill="#404040"/>
+
+    <BorderPane layout="100.0,300.0,250.0,410.0" fill="#e0e0e0"/>
+
+    <Label layout="140.0,290.0,170.0000000000001,20.0" text="Control" background="silver">
+      <ValueBinding ord="slot:" popupEnabled="false"/>
+    </Label>
+
+    <BoundLabel layout="120.0,320.0,110.0,20.0" image="module://icons/x16/ok.png" halign="left">
+      <BoundLabelBinding ord="slot:../Sp" statusEffect="color">
+        <ObjectToString name="text" format="Sp %out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="120.0,340.0,110.00000000000011,20.0" image="module://icons/x16/charts/line.png" halign="left">
+      <BoundLabelBinding ord="slot:../Pv" statusEffect="color">
+        <ObjectToString name="text" format="Pv %out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="60.0,160.0,120.0,99.0" image="module://fcuModule/com/bc/graphics/img_duct1.png"/>
+
+    <BoundLabel layout="140.0,110.0,93.0,149.0">
+      <ValueBinding ord="slot:valveCool">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://fcuModule/com/bc/graphics/img_coolerOn.png"/>
+          <Image name="falseValue" value="module://fcuModule/com/bc/graphics/img_coolerOff.png"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+    </BoundLabel>
+
+    <Label layout="30.0,40.0,1110.0,30.0" background="silver">
+      <ValueBinding ord="slot:out" popupEnabled="false">
+        <ObjectToString name="text" format="%value%"/>
+      </ValueBinding>
+    </Label>
+
+    <BoundLabel layout="310.0,160.0,140.0,99.0">
+      <ValueBinding ord="slot:../N">
+        <INumericToSimple name="image" map="gx:Image -inf:-1.0=module://fcuModule/com/bc/graphics/img_fanOn.gif;0.0:0.0=module://fcuModule/com/bc/graphics/img_fanOff.png;1.0:+inf=module://fcuModule/com/bc/graphics/img_fanOn.gif;default=null;"/>
+      </ValueBinding>
+    </BoundLabel>
+
+    <Label layout="340.0,120.0,100.0,20.0">
+      <ValueBinding ord="slot:../N">
+        <ObjectToString name="text" format="Speed %out.value%"/>
+      </ValueBinding>
+    </Label>
+
+    <BoundLabel layout="90.0,150.0,30.0,109.0" image="module://kitPxGraphics/Sensors/sensor_duct_bulbtemp_top.png"/>
+
+    <BoundLabel layout="120.0,360.0,110.0,20.0" image="module://icons/x16/hourGlass.png" halign="left">
+      <BoundLabelBinding ord="slot:PID/out" statusEffect="none">
+        <ObjectToString name="text" format="PID.out %value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="120.0,500.0,110.0,20.0" image="module://icons/x16/control/math/max.png" halign="left">
+      <BoundLabelBinding ord="slot:../Max">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="120.0,520.0,110.0,20.0" image="module://icons/x16/control/math/min.png" halign="left">
+      <BoundLabelBinding ord="slot:../Min">
+        <ObjectToString name="text" format="%out.value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="120.0,80.0,70.0,20.0">
+      <BoundLabelBinding ord="slot:valveCool">
+        <ObjectToString name="text" format="%value%"/>
+        <IBooleanToSimple name="background">
+          <Brush name="trueValue" value="lime"/>
+          <Brush name="falseValue" value="silver"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="200.0,80.0,70.0,20.0">
+      <BoundLabelBinding ord="slot:valveHeat">
+        <ObjectToString name="text" format="%value%"/>
+        <IBooleanToSimple name="background">
+          <Brush name="trueValue" value="lime"/>
+          <Brush name="falseValue" value="silver"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+      <ValueBinding ord="slot:fcuType">
+        <IEnumToSimple name="visible" map="baja:Boolean 0=false;1=true;default=true;"/>
+      </ValueBinding>
+    </BoundLabel>
+
+    <GridPane layout="120.0,380.0,110.0,120.0" columnCount="1" columnAlign="fill" uniformColumnWidth="true">
+
+      <ButtonGroupBinding ord="slot:operation"/>
+
+      <WsAnnotation name="wsAnnotation" value="42,42,8"/>
+
+    </GridPane>
+
+    <CheckBox layout="120.0,560.0,140.0,20.0">
+      <SetPointBinding ord="slot:stopFanAtNonAction" widgetEvent="actionPerformed" widgetProperty="selected">
+        <IStatusToBrush name="background"/>
+        <ObjectToString name="text" format="Stop Fan If PID ~ 0"/>
+      </SetPointBinding>
+      <WsAnnotation name="wsAnnotation" value="62,62,8"/>
+    </CheckBox>
+
+    <CheckBox layout="120.0,580.0,140.0,20.0">
+      <SetPointBinding ord="slot:scheduleLocal" widgetEvent="actionPerformed" widgetProperty="selected">
+        <IStatusToBrush name="background"/>
+        <ObjectToString name="text" format="Use Local Shedule"/>
+      </SetPointBinding>
+      <WsAnnotation name="wsAnnotation" value="62,62,8"/>
+    </CheckBox>
+
+    <CheckBox layout="120.0,600.0,140.0,20.0" styleClasses="selected" selected="true">
+      <SetPointBinding ord="slot:scheduleExtern" widgetEvent="actionPerformed" widgetProperty="selected">
+        <IStatusToBrush name="background"/>
+        <ObjectToString name="text" format="Use Global Shedule"/>
+      </SetPointBinding>
+      <WsAnnotation name="wsAnnotation" value="62,62,8"/>
+    </CheckBox>
+
+    <Scheduler layout="600.0,90.0,530.0,660.0">
+      <WbViewBinding ord="slot:enumSh"/>
+    </Scheduler>
+
+    <BoundLabel layout="230.0,110.0,93.0,149.0">
+      <ValueBinding ord="slot:valveHeat">
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://fcuModule/com/bc/graphics/img_heatingOn.png"/>
+          <Image name="falseValue" value="module://fcuModule/com/bc/graphics/img_heatingOff.png"/>
+        </IBooleanToSimple>
+      </ValueBinding>
+      <ValueBinding ord="slot:fcuType">
+        <IEnumToSimple name="visible" map="baja:Boolean 0=false;1=true;default=true;"/>
+      </ValueBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="120.0,540.0,110.0,20.0" image="module://icons/x16/cloud.png" halign="left">
+      <BoundLabelBinding ord="slot:hcMode">
+        <ObjectToString name="text" format="%value%"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="120.0,640.0,140.0,20.0">
+      <BoundLabelBinding ord="slot:comminicationError" statusEffect="none">
+        <ObjectToString name="text" format="%displayName% - %.%"/>
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://alarm/com/tridium/alarm/icons/alarmRed.png"/>
+          <Image name="falseValue" value="module://alarm/com/tridium/alarm/icons/alarmGreen.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="120.0,620.0,140.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:stateAlarm" statusEffect="none">
+        <ObjectToString name="text" format="Equipment FB alarm"/>
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://fcuModule/com/bc/graphics/alarmRed.png"/>
+          <Image name="falseValue" value="module://fcuModule/com/bc/graphics/alarmGreen.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="260.0,620.0,50.0,20.0">
+      <BoundLabelBinding ord="slot:alarmDelay" statusEffect="none">
+        <ObjectToString name="text"/>
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://alarm/com/tridium/alarm/icons/alarmRed.png"/>
+          <Image name="falseValue" value="module://alarm/com/tridium/alarm/icons/alarmGreen.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="120.0,660.0,140.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:controlError" statusEffect="none">
+        <ObjectToString name="text" format="Control Error"/>
+        <IEnumToSimple name="image" map="gx:Image 0=module://fcuModule/com/bc/graphics/alarmGreen.png;1,2=module://fcuModule/com/bc/graphics/alarmRed.png;default=module://fcuModule/com/bc/graphics/alarmRed.png;"/>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <BoundLabel layout="120.0,640.0,140.0,20.0" halign="left">
+      <BoundLabelBinding ord="slot:communicationError" statusEffect="none">
+        <ObjectToString name="text" format="CommunicationAlarm"/>
+        <IBooleanToSimple name="image">
+          <Image name="trueValue" value="module://fcuModule/com/bc/graphics/alarmRed.png"/>
+          <Image name="falseValue" value="module://fcuModule/com/bc/graphics/alarmGreen.png"/>
+        </IBooleanToSimple>
+      </BoundLabelBinding>
+    </BoundLabel>
+
+    <Label layout="280.0,420.0,31.0,31.0" image="module://fcuModule/com/bc/graphics/img_20Lable.png"/>
+
+    <GridPane layout="240.0,320.0,100.0,40.0" columnCount="1" columnAlign="fill" uniformColumnWidth="true">
+
+      <ButtonGroupBinding ord="slot:fcuType"/>
+
+      <WsAnnotation name="wsAnnotation" value="42,42,8"/>
+
+    </GridPane>
+
+  </CanvasPane>
+
+</ScrollPane>
+</content>
+</px>

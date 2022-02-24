@@ -1,0 +1,10 @@
+<!-- Module Include File -->
+
+<!-- Types -->
+<types>
+  <type name="StateMachine" class="com.bc.id1348.BStateMachine"/>  
+  <type name="UnitState" class="com.bc.id1348.BUnitState"/>
+  <type name="SpeedSw" class="com.bc.id1348.BSpeedSw"/>
+  <type name="Contactor" class="com.bc.id1348.BContactor"/>
+  <type name="ContactorState" class="com.bc.id1348.BContactorState"/>
+</types>

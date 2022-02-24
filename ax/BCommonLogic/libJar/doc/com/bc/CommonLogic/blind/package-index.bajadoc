@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<package
+  module='BCommonLogic'
+  name='com.bc.CommonLogic.blind'
+>
+<class qualifiedName='com.bc.CommonLogic.blind.BBlindControl'/>
+<class qualifiedName='com.bc.CommonLogic.blind.BCmd'>BOrientation defines a widget's orientation as either horizontal or vertical.</class>
+<class qualifiedName='com.bc.CommonLogic.blind.BSlideControl'/>
+</package>
+</bajadoc>

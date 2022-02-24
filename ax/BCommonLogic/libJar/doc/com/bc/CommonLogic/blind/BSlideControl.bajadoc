@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<class
+  module='BCommonLogic'
+  qualifiedName='com.bc.CommonLogic.blind.BSlideControl'
+  name='BSlideControl'
+  packageName='com.bc.CommonLogic.blind'
+>
+<extends module='baja' class='javax.baja.sys.BComponent'/>
+
+<!-- property openIn -->
+<property name='openIn' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;openIn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getOpenIn</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setOpenIn</tag>
+</property>
+
+<!-- property openInLongPressDetected -->
+<property name='openInLongPressDetected' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;openInLongPressDetected&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getOpenInLongPressDetected</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setOpenInLongPressDetected</tag>
+</property>
+
+<!-- property closeIn -->
+<property name='closeIn' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;closeIn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getCloseIn</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setCloseIn</tag>
+</property>
+
+<!-- property closeInLongPressDetected -->
+<property name='closeInLongPressDetected' flags='h'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;closeInLongPressDetected&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getCloseInLongPressDetected</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setCloseInLongPressDetected</tag>
+</property>
+
+<!-- property LongPressDelay -->
+<property name='LongPressDelay' flags='s'>
+<type class='int'/>
+<description>Slot for the &lt;code&gt;LongPressDelay&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getLongPressDelay</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setLongPressDelay</tag>
+</property>
+
+<!-- property TravelPeriod -->
+<property name='TravelPeriod' flags='s'>
+<type class='int'/>
+<description>Slot for the &lt;code&gt;TravelPeriod&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getTravelPeriod</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setTravelPeriod</tag>
+</property>
+
+<!-- property openCommand -->
+<property name='openCommand' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;openCommand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getOpenCommand</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setOpenCommand</tag>
+</property>
+
+<!-- property closeCommand -->
+<property name='closeCommand' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;closeCommand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getCloseCommand</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setCloseCommand</tag>
+</property>
+
+<!-- property stopCommand -->
+<property name='stopCommand' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Slot for the &lt;code&gt;stopCommand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getStopCommand</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setStopCommand</tag>
+</property>
+
+<!-- property enumCmd -->
+<property name='enumCmd' flags='s'>
+<type module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Slot for the &lt;code&gt;enumCmd&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#getEnumCmd</tag>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setEnumCmd</tag>
+</property>
+
+<!-- action setLongOpenInPbDetect -->
+<action name='setLongOpenInPbDetect' flags='h'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;setLongOpenInPbDetect&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setLongOpenInPbDetect()</tag>
+</action>
+
+<!-- action setLongCloseInPbDetect -->
+<action name='setLongCloseInPbDetect' flags='h'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;setLongCloseInPbDetect&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setLongCloseInPbDetect()</tag>
+</action>
+
+<!-- action interruptTravel -->
+<action name='interruptTravel' flags='h'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;interruptTravel&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#interruptTravel()</tag>
+</action>
+
+<!-- action openCmd -->
+<action name='openCmd' flags='s'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;openCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#openCmd()</tag>
+</action>
+
+<!-- action closeCmd -->
+<action name='closeCmd' flags='s'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;closeCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#closeCmd()</tag>
+</action>
+
+<!-- action stopCmd -->
+<action name='stopCmd' flags='s'>
+<return class='void'/>
+<description>Slot for the &lt;code&gt;stopCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#stopCmd()</tag>
+</action>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getOpenIn() -->
+<method name='getOpenIn' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;openIn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#openIn</tag>
+</method>
+
+<!-- public void setOpenIn(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setOpenIn' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;openIn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#openIn</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getOpenInLongPressDetected() -->
+<method name='getOpenInLongPressDetected' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;openInLongPressDetected&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#openInLongPressDetected</tag>
+</method>
+
+<!-- public void setOpenInLongPressDetected(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setOpenInLongPressDetected' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;openInLongPressDetected&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#openInLongPressDetected</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getCloseIn() -->
+<method name='getCloseIn' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;closeIn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#closeIn</tag>
+</method>
+
+<!-- public void setCloseIn(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setCloseIn' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;closeIn&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#closeIn</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getCloseInLongPressDetected() -->
+<method name='getCloseInLongPressDetected' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;closeInLongPressDetected&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#closeInLongPressDetected</tag>
+</method>
+
+<!-- public void setCloseInLongPressDetected(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setCloseInLongPressDetected' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;closeInLongPressDetected&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#closeInLongPressDetected</tag>
+</method>
+
+<!-- public int getLongPressDelay() -->
+<method name='getLongPressDelay' public='true'>
+<return class='int'/>
+<description>Get the &lt;code&gt;LongPressDelay&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#LongPressDelay</tag>
+</method>
+
+<!-- public void setLongPressDelay(int v) -->
+<method name='setLongPressDelay' public='true'>
+<parameter name='v' class='int'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;LongPressDelay&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#LongPressDelay</tag>
+</method>
+
+<!-- public int getTravelPeriod() -->
+<method name='getTravelPeriod' public='true'>
+<return class='int'/>
+<description>Get the &lt;code&gt;TravelPeriod&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#TravelPeriod</tag>
+</method>
+
+<!-- public void setTravelPeriod(int v) -->
+<method name='setTravelPeriod' public='true'>
+<parameter name='v' class='int'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;TravelPeriod&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#TravelPeriod</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getOpenCommand() -->
+<method name='getOpenCommand' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;openCommand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#openCommand</tag>
+</method>
+
+<!-- public void setOpenCommand(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setOpenCommand' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;openCommand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#openCommand</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getCloseCommand() -->
+<method name='getCloseCommand' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;closeCommand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#closeCommand</tag>
+</method>
+
+<!-- public void setCloseCommand(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setCloseCommand' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;closeCommand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#closeCommand</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusBoolean getStopCommand() -->
+<method name='getStopCommand' public='true'>
+<return module='baja' class='javax.baja.status.BStatusBoolean'/>
+<description>Get the &lt;code&gt;stopCommand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#stopCommand</tag>
+</method>
+
+<!-- public void setStopCommand(baja:javax.baja.status.BStatusBoolean v) -->
+<method name='setStopCommand' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusBoolean'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;stopCommand&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#stopCommand</tag>
+</method>
+
+<!-- public baja:javax.baja.status.BStatusEnum getEnumCmd() -->
+<method name='getEnumCmd' public='true'>
+<return module='baja' class='javax.baja.status.BStatusEnum'/>
+<description>Get the &lt;code&gt;enumCmd&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#enumCmd</tag>
+</method>
+
+<!-- public void setEnumCmd(baja:javax.baja.status.BStatusEnum v) -->
+<method name='setEnumCmd' public='true'>
+<parameter name='v' module='baja' class='javax.baja.status.BStatusEnum'/>
+<return class='void'/>
+<description>Set the &lt;code&gt;enumCmd&lt;/code&gt; property.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#enumCmd</tag>
+</method>
+
+<!-- public void setLongOpenInPbDetect() -->
+<method name='setLongOpenInPbDetect' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;setLongOpenInPbDetect&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setLongOpenInPbDetect</tag>
+</method>
+
+<!-- public void setLongCloseInPbDetect() -->
+<method name='setLongCloseInPbDetect' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;setLongCloseInPbDetect&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#setLongCloseInPbDetect</tag>
+</method>
+
+<!-- public void interruptTravel() -->
+<method name='interruptTravel' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;interruptTravel&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#interruptTravel</tag>
+</method>
+
+<!-- public void openCmd() -->
+<method name='openCmd' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;openCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#openCmd</tag>
+</method>
+
+<!-- public void closeCmd() -->
+<method name='closeCmd' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;closeCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#closeCmd</tag>
+</method>
+
+<!-- public void stopCmd() -->
+<method name='stopCmd' public='true'>
+<return class='void'/>
+<description>Invoke the &lt;code&gt;stopCmd&lt;/code&gt; action.</description>
+<tag name='see'>com.bc.CommonLogic.blind.BSlideControl#stopCmd</tag>
+</method>
+
+<!-- public baja:javax.baja.sys.Type getType() -->
+<method name='getType' public='true'>
+<return module='baja' class='javax.baja.sys.Type'/>
+</method>
+
+<!-- public void doSetLongOpenInPbDetect() -->
+<method name='doSetLongOpenInPbDetect' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doSetLongCloseInPbDetect() -->
+<method name='doSetLongCloseInPbDetect' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doInterruptTravel() -->
+<method name='doInterruptTravel' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doOpenCmd() -->
+<method name='doOpenCmd' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doCloseCmd() -->
+<method name='doCloseCmd' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void doStopCmd() -->
+<method name='doStopCmd' public='true'>
+<return class='void'/>
+</method>
+
+<!-- public void changed(baja:javax.baja.sys.Property p, baja:javax.baja.sys.Context cx) -->
+<method name='changed' public='true'>
+<parameter name='p' module='baja' class='javax.baja.sys.Property'/>
+<parameter name='cx' module='baja' class='javax.baja.sys.Context'/>
+<return class='void'/>
+</method>
+
+<!-- public final static baja:javax.baja.sys.Type TYPE -->
+<field name='TYPE' public='true' static='true' final='true'>
+<type module='baja' class='javax.baja.sys.Type'/>
+</field>
+
+<!-- public baja:javax.baja.sys.Clock$Ticket longPbTicket -->
+<field name='longPbTicket' public='true'>
+<type module='baja' class='javax.baja.sys.Clock$Ticket'/>
+</field>
+
+<!-- public baja:javax.baja.sys.Clock$Ticket interruptTicket -->
+<field name='interruptTicket' public='true'>
+<type module='baja' class='javax.baja.sys.Clock$Ticket'/>
+</field>
+
+</class>
+</bajadoc>

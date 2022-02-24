@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="1.0">
+<p m="b=baja" t="b:UnrestrictedFolder">
+
+ <p n="NSerialReqRespNetwork" m="x=NSerialReqResp" t="x:NSerialReqRespNetwork"/>
+ <p n="NSerialReqRespDevice" t="x:NSerialReqRespDevice"/>
+ <p n="NSerialReqRespDeviceFolder" t="x:NSerialReqRespDeviceFolder"/>
+
+ <p n="NSerialReqRespPointFolder" t="x:NSerialReqRespPointFolder"/>
+
+</p>
+</bajaObjectGraph>

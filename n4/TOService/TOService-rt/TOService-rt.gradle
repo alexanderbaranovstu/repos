@@ -1,0 +1,50 @@
+/* Module Build File */
+
+description     = "Units as service entity, service cards"
+ext {
+}
+niagaraModule {
+  moduleName = "TOService"
+  preferredSymbol = "TS"
+  runtimeProfile = "rt"
+  version = "1.12"
+  certAlias = "jacecodesign"
+  
+  modulePart {
+      name = "TOService-ux"
+      runtimeProfile = "ux"
+  }
+
+  modulePart {
+      name = "TOService-se"
+      runtimeProfile = "se"
+  }
+
+  modulePart {
+      name = "TOService-wb"
+      runtimeProfile = "wb"
+  }
+}
+
+dependencies {
+  compile "Tridium:nre:4.7"
+  compile "Tridium:baja:4.7"
+  compile "Tridium:alarm-rt:4.7"
+  
+  compile "Tridium:gx-rt:4.7"
+    
+  compile "Tridium:bajaui-wb:4.7" 
+  compile "Tridium:workbench-wb:4.7"
+    
+  compile "Tridium:control-rt:4.7" 
+  compile "Tridium:report-rt:4.7" 
+}
+jar { 
+  from("src") { 
+    include "com/bc/graphics/*.*"
+    }
+}
+moduleTestJar {
+  from('srcTest') {
+  }
+}

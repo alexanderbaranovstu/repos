@@ -1,0 +1,23 @@
+/* Module Build File */
+
+description     = "Units as service entity, service cards"
+ext {
+}
+niagaraModule {
+  moduleName = "TOService"
+  preferredSymbol = "TS"
+  runtimeProfile = "se"
+}
+
+dependencies {
+  compile "Tridium:nre:4.7"
+  compile "Tridium:baja:4.7"
+  compile project(":TOService-ux")
+  compile project(":TOService-rt")
+  compile project(":TOService-wb")
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

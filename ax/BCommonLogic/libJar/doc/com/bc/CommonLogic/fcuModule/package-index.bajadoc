@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bajadoc version='1.0' createdBy='Niagara Devkit 3.8.401' createdAt='18-июн-2021' createdOn='MSI'>
+<package
+  module='BCommonLogic'
+  name='com.bc.CommonLogic.fcuModule'
+>
+<class qualifiedName='com.bc.CommonLogic.fcuModule.BFcu'/>
+<class qualifiedName='com.bc.CommonLogic.fcuModule.BKnxGira5142Converter'/>
+<class qualifiedName='com.bc.CommonLogic.fcuModule.BPid'>The BLoopPoint class implements a simple PID control loop.</class>
+</package>
+</bajadoc>
