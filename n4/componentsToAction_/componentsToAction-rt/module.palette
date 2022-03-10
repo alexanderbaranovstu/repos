@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bajaObjectGraph version="4.0" reversibleEncodingKeySource="none" FIPSEnabled="false" reversibleEncodingValidator="[null.1]=" >
+<p m="b=baja" t="b:Folder">
+  <p n="Group" h="2" m="CT=componentsToAction" t="CT:Group">  </p>
+  <p n="Unit" h="3" m="CT=componentsToAction" t="CT:Unit">  </p>
+  <p n="ComponentsToAction" h="4" m="CT=componentsToAction" t="CT:ComponentsToAction">  </p>
+
+</p>
+</bajaObjectGraph>

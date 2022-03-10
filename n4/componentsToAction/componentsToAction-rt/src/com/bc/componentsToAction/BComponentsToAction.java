@@ -36,7 +36,7 @@ public class BComponentsToAction extends BComponent
   -*/
 /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
 /*@ $com.bc.componentsToAction.BComponentsToAction(1129118370)1.0$ @*/
-/* Generated Thu Feb 03 08:06:10 MSK 2022 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+/* Generated Wed Mar 09 12:21:41 MSK 2022 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
 ////////////////////////////////////////////////////////////////
 // Property "in"
@@ -116,9 +116,6 @@ public class BComponentsToAction extends BComponent
   public static final Type TYPE = Sys.loadType(BComponentsToAction.class);
 
 /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
-
-
-
 
 
 

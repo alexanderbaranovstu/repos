@@ -1,17 +1,12 @@
 /* Module Build File */
 
-description     = "Calculate Unit States and convert component to actions"
+description     = "Common logic components To Action "
 ext {
 }
 niagaraModule {
   moduleName = "componentsToAction"
-  preferredSymbol = "CT"
+  preferredSymbol = "CA"
   runtimeProfile = "rt"
-
-  modulePart {
-      name = "componentsToAction-wb"
-      runtimeProfile = "wb"
-  }
 }
 
 dependencies {

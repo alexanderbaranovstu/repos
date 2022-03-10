@@ -1,0 +1,25 @@
+/* Module Build File */
+
+description     = "Calculate Unit States and convert component to actions"
+ext {
+}
+niagaraModule {
+  moduleName = "componentsToAction"
+  preferredSymbol = "CT"
+  runtimeProfile = "rt"
+
+  modulePart {
+      name = "componentsToAction-wb"
+      runtimeProfile = "wb"
+  }
+}
+
+dependencies {
+  compile "Tridium:nre:4.7"
+  compile "Tridium:baja:4.7"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

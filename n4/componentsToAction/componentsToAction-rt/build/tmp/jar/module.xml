@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module name="componentsToAction-rt" bajaVersion="0" vendor="BC" vendorVersion="1.1" description="Calculate Unit States and convert component to actions" preferredSymbol="CT" nre="true" autoload="true" installable="true" buildMillis="1643881903622" buildHost="LAPTOP-NOADV716" moduleName="componentsToAction" runtimeProfile="rt">
+<module name="componentsToAction-rt" bajaVersion="0" vendor="BC" vendorVersion="1.1" description="Common logic components To Action " preferredSymbol="CA" nre="true" autoload="true" installable="true" buildMillis="1646915317389" buildHost="LAPTOP-NOADV716" moduleName="componentsToAction" runtimeProfile="rt">
  <dependencies>
   <dependency name="baja" vendor="Tridium" vendorVersion="4.7"/>
  </dependencies>
@@ -15,7 +15,4 @@
   <niagara-permission-groups type="workbench"/>
   <niagara-permission-groups type="station"/>
  </permissions>
- <moduleParts>
-  <modulePart name="componentsToAction-wb" runtimeProfile="wb"/>
- </moduleParts>
 </module>

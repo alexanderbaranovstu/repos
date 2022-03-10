@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="componentsToAction-rt" bajaVersion="0" vendor="BC" vendorVersion="1.1" description="Calculate Unit States and convert component to actions" preferredSymbol="CT" nre="true" autoload="true" installable="true" buildMillis="1645796772735" buildHost="LAPTOP-NOADV716" moduleName="componentsToAction" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.7"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type name="Group" class="com.bc.componentsToAction.BGroup"/>
+  <type name="Unit" class="com.bc.componentsToAction.BUnit"/>
+  <type name="UState" class="com.bc.componentsToAction.BUState"/>
+  <type name="ComponentsToAction" class="com.bc.componentsToAction.BComponentsToAction"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+ <moduleParts>
+  <modulePart name="componentsToAction-wb" runtimeProfile="wb"/>
+ </moduleParts>
+</module>

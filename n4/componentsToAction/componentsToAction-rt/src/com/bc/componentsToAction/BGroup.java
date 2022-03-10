@@ -10,7 +10,7 @@ import javax.baja.sys.*;
 
 
 import javax.baja.agent.*;
-
+import javax.baja.util.*;
 
 import javax.baja.status.*;
 
@@ -24,6 +24,9 @@ public class BGroup extends BComponent
     properties  
     {  
        groupState          :     BStatusEnum     flags { SUMMARY }      default {[ new BStatusEnum(BUState.off, BStatus.ok) ]}      slotfacets {[ BFacets.makeEnum( BEnumRange.make(BUState.TYPE) ) ]}
+       sourceName            :     BFormat               flags {  }     default {[ BFormat.make(" %displayName% groupState=%groupState%")  ]}
+       msg                 :       BString       flags { SUMMARY }       default {[ BString.make("")  ]}
+
     }   
     actions 
     {
@@ -37,9 +40,10 @@ public class BGroup extends BComponent
 
 
 
+
 /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
-/*@ $com.bc.componentsToAction.BGroup(85108797)1.0$ @*/
-/* Generated Thu Feb 03 12:51:39 MSK 2022 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+/*@ $com.bc.componentsToAction.BGroup(1821809776)1.0$ @*/
+/* Generated Thu Mar 10 15:12:12 MSK 2022 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
 ////////////////////////////////////////////////////////////////
 // Property "groupState"
@@ -63,6 +67,52 @@ public class BGroup extends BComponent
    * @see #groupState
    */
   public void setGroupState(BStatusEnum v) { set(groupState, v, null); }
+
+////////////////////////////////////////////////////////////////
+// Property "sourceName"
+////////////////////////////////////////////////////////////////
+  
+  /**
+   * Slot for the {@code sourceName} property.
+   * @see #getSourceName
+   * @see #setSourceName
+   */
+  public static final Property sourceName = newProperty(0, BFormat.make(" %displayName% groupState=%groupState%"), null);
+  
+  /**
+   * Get the {@code sourceName} property.
+   * @see #sourceName
+   */
+  public BFormat getSourceName() { return (BFormat)get(sourceName); }
+  
+  /**
+   * Set the {@code sourceName} property.
+   * @see #sourceName
+   */
+  public void setSourceName(BFormat v) { set(sourceName, v, null); }
+
+////////////////////////////////////////////////////////////////
+// Property "msg"
+////////////////////////////////////////////////////////////////
+  
+  /**
+   * Slot for the {@code msg} property.
+   * @see #getMsg
+   * @see #setMsg
+   */
+  public static final Property msg = newProperty(Flags.SUMMARY, BString.make(""), null);
+  
+  /**
+   * Get the {@code msg} property.
+   * @see #msg
+   */
+  public String getMsg() { return getString(msg); }
+  
+  /**
+   * Set the {@code msg} property.
+   * @see #msg
+   */
+  public void setMsg(String v) { setString(msg, v, null); }
 
 ////////////////////////////////////////////////////////////////
 // Action "updateGroupState"
@@ -165,11 +215,14 @@ public void doUpdateGroupState() throws Exception
       continue; 
     }
   }
+      setMsg(getSourceName().format(this));
+      
 }
 
 public void doNormalToService() throws Exception
 {
   setGroupState(new BStatusEnum(BUState.service, BStatus.ok)); 
+  setMsg(getSourceName().format(this));
 }  
 public void doServiceToNormal() throws Exception
 {

@@ -1,0 +1,9 @@
+/*
+ * Copyright 2022 BC, All Rights Reserved.
+ */
+/* Vendor Configuration File */
+group = 'BC'
+
+def moduleVersion = '1.1'
+def moduleVersionPatch = [:]
+version = "${moduleVersion}${moduleVersionPatch.get(project.name, '')}"

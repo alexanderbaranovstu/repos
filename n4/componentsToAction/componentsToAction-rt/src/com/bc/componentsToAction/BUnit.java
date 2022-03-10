@@ -10,7 +10,7 @@ import javax.baja.sys.*;
 
 
 import javax.baja.agent.*;
-
+import javax.baja.util.*;
 
 import javax.baja.status.*;
 
@@ -24,6 +24,8 @@ public class BUnit extends BComponent
     properties  
     {  
        unitState          :     BStatusEnum     flags { SUMMARY }      default {[ new BStatusEnum(BUState.off, BStatus.ok) ]}      slotfacets {[ BFacets.makeEnum( BEnumRange.make(BUState.TYPE) ) ]}
+       sourceName            :     BFormat               flags {  }     default {[ BFormat.make(" %displayName% unitState=%unitState%")  ]}
+       msg                 :       BString       flags { SUMMARY }       default {[ BString.make("")  ]}
     }   
     actions
     {
@@ -39,9 +41,11 @@ public class BUnit extends BComponent
 
 
 
+
+
 /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
-/*@ $com.bc.componentsToAction.BUnit(4202915109)1.0$ @*/
-/* Generated Thu Feb 03 12:51:39 MSK 2022 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+/*@ $com.bc.componentsToAction.BUnit(970498233)1.0$ @*/
+/* Generated Thu Mar 10 15:28:30 MSK 2022 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
 ////////////////////////////////////////////////////////////////
 // Property "unitState"
@@ -65,6 +69,52 @@ public class BUnit extends BComponent
    * @see #unitState
    */
   public void setUnitState(BStatusEnum v) { set(unitState, v, null); }
+
+////////////////////////////////////////////////////////////////
+// Property "sourceName"
+////////////////////////////////////////////////////////////////
+  
+  /**
+   * Slot for the {@code sourceName} property.
+   * @see #getSourceName
+   * @see #setSourceName
+   */
+  public static final Property sourceName = newProperty(0, BFormat.make(" %displayName% unitState=%unitState%"), null);
+  
+  /**
+   * Get the {@code sourceName} property.
+   * @see #sourceName
+   */
+  public BFormat getSourceName() { return (BFormat)get(sourceName); }
+  
+  /**
+   * Set the {@code sourceName} property.
+   * @see #sourceName
+   */
+  public void setSourceName(BFormat v) { set(sourceName, v, null); }
+
+////////////////////////////////////////////////////////////////
+// Property "msg"
+////////////////////////////////////////////////////////////////
+  
+  /**
+   * Slot for the {@code msg} property.
+   * @see #getMsg
+   * @see #setMsg
+   */
+  public static final Property msg = newProperty(Flags.SUMMARY, BString.make(""), null);
+  
+  /**
+   * Get the {@code msg} property.
+   * @see #msg
+   */
+  public String getMsg() { return getString(msg); }
+  
+  /**
+   * Set the {@code msg} property.
+   * @see #msg
+   */
+  public void setMsg(String v) { setString(msg, v, null); }
 
 ////////////////////////////////////////////////////////////////
 // Action "setOff"
@@ -215,7 +265,8 @@ public void changed(Property p, Context cx)   {
   if(!isRunning())  return; // should never get here, but return if we do.
   super.changed(p, cx);
   if( p == unitState ){  
-     ((BComponent)this.getParent()).doInvoke(this.getParent().getAction("updateGroupState"),null,null);     
+     ((BComponent)this.getParent()).doInvoke(this.getParent().getAction("updateGroupState"),null,null);    
+     setMsg(getSourceName().format(this));
   }
 }
 
